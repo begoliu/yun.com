@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>景区详情</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="../js/jquery.js"></script>
+    <link rel="stylesheet" href="../pintu/pintu.css">
+    <link rel="stylesheet" href="../css/yun.css">
+    <script src="../pintu/pintu.js"></script>
+    <script src="../pintu/respond.js"></script>
+    
+</head>
+<body>
+
+<div class="yun-min-top clearfix">
+    <div class="ycontainer">
+		<!-- <div class="b-l">
+			你好！<a href="#"><strong>张三</strong></a><span>|</span><a href="#">退出</a><span>|</span><a href="#">消息</a>
+		</div> -->
+		<div class="b-l">
+			<a href="#"><strong>登录</strong></a><a href="#"><strong style="color:#FF7E00;margin-left:15px;">注册</strong></a>
+		</div>
+		<div class="b-r">
+            <a href="">网站首页</a><span>|</span><a href="">商家中心</a><span>|</span><a href="">会员中心</a><span>|</span><a href="">联系客服</a>
+		</div>
+	</div>
+</div>
+<div class="yun-top">
+    <div class="ycontainer">
+	    <div class="line line-big ">
+	   		<div class="x4 logo"><a href="#"><img src="../images/logo.png"></a></div>
+		    <div class="x8">
+			    <ul class="nav nav-menu nav-inline nav-right nav-navicon">
+					<li><a href="#">首页</a> </li>
+					<li><a href="#">房源列表</a> </li>
+					<li><a href="#">招商加盟</a> </li>
+					<li class="active"><a href="#">新闻中心</a> </li>
+					<li><a href="#">关于我们</a> </li>
+				</ul>
+			</div>
+	    </div>
+	</div>
+</div>
+<link rel="stylesheet" href="../css/imgzoom.css">
+<script src="../js/imgzoom.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+	  var showproduct = {
+		  "boxid":"showbox",
+		  "sumid":"showsum",
+		  "boxw":450,//宽度,该版本中请把宽高填写成一样
+		  "boxh":250,//高度,该版本中请把宽高填写成一样
+		  "sumw":90,//列表每个宽度,该版本中请把宽高填写成一样
+		  "sumh":90,//列表每个高度,该版本中请把宽高填写成一样
+		  "sumi":10,//列表间隔
+		  "sums":4,//列表显示个数
+		  "sumsel":"sel",
+		  "sumborder":1,//列表边框，没有边框填写0，边框在css中修改
+		  "lastid":"showlast",
+		  "nextid":"shownext"
+		  };//参数定义	  
+	 $.ljsGlasses.pcGlasses(showproduct);//方法调用，务必在加载完后执行
+  });
+</script>
+<div class="ycontainer clearfix">
+    <ul class="yun-breadcrumb">
+		    <li><a href="">首页</a></li>
+		    <li><a href="">我要买房</a></li>
+		    <li><span>房源当前页</span></li>
+    </ul>
+    <dl class="fy-main clearfix">
+    	<dt>
+			<div id="showbox">
+				<img src="../images/ad/qy-4.jpg" width="401" height="251" />
+				<img src="../images/ad/qy-5.jpg" width="400" height="250" />
+				<img src="../images/ad/qy-6.jpg" width="398" height="251" />
+				<img src="../images/ad/qy-7.jpg" width="399" height="251" />
+				<img src="../images/ad/qy-8.jpg" width="399" height="251" />
+			</div><!--展示图片盒子-->
+			<div id="showsum"></div><!--展示图片里边-->
+			<div class="showpage">
+			    <a href="javascript:void(0);" id="showlast"> < </a>
+			    <a href="javascript:void(0);" id="shownext"> > </a>
+			</div>
+
+    	</dt>
+    	<dd>
+    	    <div class="tit-main">
+    	    	<h1>石头记矿物园</h1>
+    	    	<span><em>AAAAA</em>景区</span>
+    	    </div>
+    	    <table>
+    	    	<tr>
+    	    		<th>景点地址：</th>
+    	    		<td>
+    	    			<p>广州址市花都区珠宝城大观园路1号</p>
+    	    		</td>
+    	    	</tr>
+    	    	<tr>
+    	    		<th>开放时间：</th>
+    	    		<td>
+    	    			<p>9:00-18:00</p>
+    	    			<p>餐厅营业时间：早上：10:00-14:30；</p>
+    	    			<p>下午：17:00-21:00</p>
+    	    		</td>
+    	    	</tr>
+    	    	<tr>
+    	    		<th>服务承诺：</th>
+    	    		<td><p>预订此景区门票，入园无票且携程10分钟内未解决，可买原价票入园，易房云双倍赔差价。预订此景区门票，入园无票且携程10分钟内未解决，可买原价票入园，易房云双倍赔差价。</p></td>
+    	    	</tr>
+    	    </table>
+			<div class="price-float">
+				<div class="price"><b>¥ 35</b>起</div>
+				<p>50分钟前有人预订该景点</p> 
+			</div>
+    	
+
+    	</dd>
+    </dl>
+    
+	<div class="tab jingqu-about">
+		<div class="tab-head">
+			<ul class="tab-nav clearfix">
+		     	<li class="active"><a href="#tab-mp">门票</a> </li>
+				<li><a href="#tab-wl">玩乐</a> </li>
+				<li><a href="#tab-mpjd">门票+酒店</a> </li>
+				<li><a href="#tab-fjjd">附近酒店</a> </li>
+			</ul>
+		</div>
+		<div class="tab-body tab-body-bordered">
+			<div class="tab-panel " id="tab-mp">
+			    <table class="table table-hover">
+			    	<tr>
+			    		<th>名称</th>
+			    		<th>提前预订时间</th>
+			    		<th>市场价</th>
+			    		<th>易房云卡</th>
+			    		<th>支付方式</th>
+			    	</tr>
+			    	<tr>
+			    		<td>[套票]   广州花都石头记矿物园+御盛国际马术度假区联票</td>
+			    		<td>当天15:30前</td>
+			    		<td><del>¥ 50</del></td>
+			    		<td><strong>¥ 50</strong></td>
+			    		<td>在线支付<a href="#" class="button button-little bg-yellow">预定</a></td>
+			    	</tr>
+			    	<tr>
+			    		<td>[套票]   广州花都石头记矿物园+御盛国际马术度假区联票</td>
+			    		<td>当天15:30前</td>
+			    		<td><del>¥ 50</del></td>
+			    		<td><strong>¥ 50</strong></td>
+			    		<td>在线支付<a href="#" class="button button-little bg-yellow">预定</a></td>
+			    	</tr>
+			    	<tr>
+			    		<td>[套票]   广州花都石头记矿物园+御盛国际马术度假区联票</td>
+			    		<td>当天15:30前</td>
+			    		<td><del>¥ 50</del></td>
+			    		<td><strong>¥ 50</strong></td>
+			    		<td>在线支付<a href="#" class="button button-little bg-yellow">预定</a></td>
+			    	</tr>
+			    	<tr>
+			    		<td>[套票]   广州花都石头记矿物园+御盛国际马术度假区联票</td>
+			    		<td>当天15:30前</td>
+			    		<td><del>¥ 50</del></td>
+			    		<td><strong>¥ 50</strong></td>
+			    		<td>在线支付<a href="#" class="button button-little bg-yellow">预定</a></td>
+			    	</tr>
+			    	<tr>
+			    		<td>[套票]   广州花都石头记矿物园+御盛国际马术度假区联票</td>
+			    		<td>当天15:30前</td>
+			    		<td><del>¥ 50</del></td>
+			    		<td><strong>¥ 50</strong></td>
+			    		<td>在线支付<a href="#" class="button button-little bg-yellow">预定</a></td>
+			    	</tr>
+			    	<tr>
+			    		<td>[套票]   广州花都石头记矿物园+御盛国际马术度假区联票</td>
+			    		<td>当天15:30前</td>
+			    		<td><del>¥ 50</del></td>
+			    		<td><strong>¥ 50</strong></td>
+			    		<td>在线支付<a href="#" class="button button-little bg-yellow">预定</a></td>
+			    	</tr>
+			    	
+			    </table>
+			</div>
+			<div class="tab-panel" id="tab-wl">
+			    <table class="table table-hover">
+			    	<tr>
+			    		<th>名称</th>
+			    		<th>提前预订时间</th>
+			    		<th>市场价</th>
+			    		<th>易房云卡</th>
+			    		<th>支付方式</th>
+			    	</tr>
+			    	<tr>
+			    		<td>[套票]   广州花都石头记矿物园+御盛国际马术度假区联票</td>
+			    		<td>当天15:30前</td>
+			    		<td><del>¥ 50</del></td>
+			    		<td><strong>¥ 50</strong></td>
+			    		<td>在线支付<a href="#" class="button button-little bg-yellow">预定</a></td>
+			    	</tr>
+			    	
+			    	<tr>
+			    		<td>[套票]   广州花都石头记矿物园+御盛国际马术度假区联票</td>
+			    		<td>当天15:30前</td>
+			    		<td><del>¥ 50</del></td>
+			    		<td><strong>¥ 50</strong></td>
+			    		<td>在线支付<a href="#" class="button button-little bg-yellow">预定</a></td>
+			    	</tr>
+			    	<tr>
+			    		<td>[套票]   广州花都石头记矿物园+御盛国际马术度假区联票</td>
+			    		<td>当天15:30前</td>
+			    		<td><del>¥ 50</del></td>
+			    		<td><strong>¥ 50</strong></td>
+			    		<td>在线支付<a href="#" class="button button-little bg-yellow">预定</a></td>
+			    	</tr>
+			    	<tr>
+			    		<td>[套票]   广州花都石头记矿物园+御盛国际马术度假区联票</td>
+			    		<td>当天15:30前</td>
+			    		<td><del>¥ 50</del></td>
+			    		<td><strong>¥ 50</strong></td>
+			    		<td>在线支付<a href="#" class="button button-little bg-yellow">预定</a></td>
+			    	</tr>
+			    	<tr>
+			    		<td>[套票]   广州花都石头记矿物园+御盛国际马术度假区联票</td>
+			    		<td>当天15:30前</td>
+			    		<td><del>¥ 50</del></td>
+			    		<td><strong>¥ 50</strong></td>
+			    		<td>在线支付<a href="#" class="button button-little bg-yellow">预定</a></td>
+			    	</tr>
+			    	<tr>
+			    		<td>[套票]   广州花都石头记矿物园+御盛国际马术度假区联票</td>
+			    		<td>当天15:30前</td>
+			    		<td><del>¥ 50</del></td>
+			    		<td><strong>¥ 50</strong></td>
+			    		<td>在线支付<a href="#" class="button button-little bg-yellow">预定</a></td>
+			    	</tr>
+			    </table>
+			</div>
+			<div class="tab-panel active" id="tab-mpjd">
+			    <div class="tit-jd">石头记矿物园门票+酒店</div>
+			    <div class="box-jd clearfix">
+			    	<a class="no-bl" href="">
+			    		<dl>
+			    			<dt><img src="../images/ad/120x120.jpg" alt=""></dt>
+			    			<dd>
+			    				<div class="tit">广州柏宁精品酒店1晚，入住花都大赏......</div>
+			    				<p>酒店距离景点：50.8公里</p>
+			    				<del>市场价：¥ 763</del>
+			    				<div class="price">易房云卡价：<strong>¥ 500</strong></div>
+			    			</dd>
+			    		</dl>
+			    	</a>
+			    	<a href="">
+			    		<dl>
+			    			<dt><img src="../images/ad/120x120.jpg" alt=""></dt>
+			    			<dd>
+			    				<div class="tit">广州柏宁精品酒店1晚，入住花都大赏......</div>
+			    				<p>酒店距离景点：4.9公里</p>
+			    				<del>市场价：¥ 763</del>
+			    				<div class="price">易房云卡价：<strong>¥ 500</strong></div>
+			    			</dd>
+			    		</dl>
+			    	</a>
+			    	<a href="">
+			    		<dl>
+			    			<dt><img src="../images/ad/120x120.jpg" alt=""></dt>
+			    			<dd>
+			    				<div class="tit">广州柏宁精品酒店1晚，入住花都大赏......</div>
+			    				<p>酒店距离景点：4.9公里</p>
+			    				<del>市场价：¥ 763</del>
+			    				<div class="price">易房云卡价：<strong>¥ 500</strong></div>
+			    			</dd>
+			    		</dl>
+			    	</a>
+			    	<a class="no-bl" href="">
+			    		<dl>
+			    			<dt><img src="../images/ad/120x120.jpg" alt=""></dt>
+			    			<dd>
+			    				<div class="tit">广州柏宁精品酒店1晚，入住花都大赏......</div>
+			    				<p>酒店距离景点：4.9公里</p>
+			    				<del>市场价：¥ 763</del>
+			    				<div class="price">易房云卡价：<strong>¥ 500</strong></div>
+			    			</dd>
+			    		</dl>
+			    	</a>
+			    	<a href="">
+			    		<dl>
+			    			<dt><img src="../images/ad/120x120.jpg" alt=""></dt>
+			    			<dd>
+			    				<div class="tit">广州柏宁精品酒店1晚，入住花都大赏......</div>
+			    				<p>酒店距离景点：4.9公里</p>
+			    				<del>市场价：¥ 763</del>
+			    				<div class="price">易房云卡价：<strong>¥ 500</strong></div>
+			    			</dd>
+			    		</dl>
+			    	</a>
+			    	<a href="">
+			    		<dl>
+			    			<dt><img src="../images/ad/120x120.jpg" alt=""></dt>
+			    			<dd>
+			    				<div class="tit">广州柏宁精品酒店1晚，入住花都大赏......</div>
+			    				<p>酒店距离景点：4.9公里</p>
+			    				<del>市场价：¥ 763</del>
+			    				<div class="price">易房云卡价：<strong>¥ 500</strong></div>
+			    			</dd>
+			    		</dl>
+			    	</a>
+
+			    </div>	
+			</div>
+			<div class="tab-panel" id="tab-fjjd">
+			    <div class="tit-jd">石头记矿物园附近酒店</div>
+			    <div class="box-jd clearfix">
+			    	<a class="no-bl" href="">
+			    		<dl>
+			    			<dt><img src="../images/ad/120x120.jpg" alt=""></dt>
+			    			<dd>
+			    				<div class="tit">广州馨悦商务公寓</div>
+			    				<p>酒店距离景点：50.8公里</p>
+			    				<del>市场价：¥ 763</del>
+			    				<div class="price">易房云卡价：<strong>¥ 500</strong></div>
+			    			</dd>
+			    		</dl>
+			    	</a>
+			    	<a href="">
+			    		<dl>
+			    			<dt><img src="../images/ad/120x120.jpg" alt=""></dt>
+			    			<dd>
+			    				<div class="tit">广州馨悦商务公寓</div>
+			    				<p>酒店距离景点：4.9公里</p>
+			    				<del>市场价：¥ 763</del>
+			    				<div class="price">易房云卡价：<strong>¥ 500</strong></div>
+			    			</dd>
+			    		</dl>
+			    	</a>
+			    	<a href="">
+			    		<dl>
+			    			<dt><img src="../images/ad/120x120.jpg" alt=""></dt>
+			    			<dd>
+			    				<div class="tit">广州馨悦商务公寓</div>
+			    				<p>酒店距离景点：4.9公里</p>
+			    				<del>市场价：¥ 763</del>
+			    				<div class="price">易房云卡价：<strong>¥ 500</strong></div>
+			    			</dd>
+			    		</dl>
+			    	</a>
+			    	<a class="no-bl" href="">
+			    		<dl>
+			    			<dt><img src="../images/ad/120x120.jpg" alt=""></dt>
+			    			<dd>
+			    				<div class="tit">广州馨悦商务公寓</div>
+			    				<p>酒店距离景点：4.9公里</p>
+			    				<del>市场价：¥ 763</del>
+			    				<div class="price">易房云卡价：<strong>¥ 500</strong></div>
+			    			</dd>
+			    		</dl>
+			    	</a>
+			    	<a href="">
+			    		<dl>
+			    			<dt><img src="../images/ad/120x120.jpg" alt=""></dt>
+			    			<dd>
+			    				<div class="tit">广州馨悦商务公寓</div>
+			    				<p>酒店距离景点：4.9公里</p>
+			    				<del>市场价：¥ 763</del>
+			    				<div class="price">易房云卡价：<strong>¥ 500</strong></div>
+			    			</dd>
+			    		</dl>
+			    	</a>
+			    	<a href="">
+			    		<dl>
+			    			<dt><img src="../images/ad/120x120.jpg" alt=""></dt>
+			    			<dd>
+			    				<div class="tit">广州馨悦商务公寓</div>
+			    				<p>酒店距离景点：4.9公里</p>
+			    				<del>市场价：¥ 763</del>
+			    				<div class="price">易房云卡价：<strong>¥ 500</strong></div>
+			    			</dd>
+			    		</dl>
+			    	</a>
+
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="jingqu-main-show">
+		<ul class="nav nav-inline nav-menu nav-navicon spy clearfix" data-target=".spy-content" data-offset-spy="10">
+			<li class="active"><a href="#spy1">预订须知</a> </li>
+			<li><a href="#spy2">景点简介</a></li>
+			<li><a href="#spy3">交通指南</a></li>
+			<li><a href="#spy4">用户点评</a></li>
+		</ul>
+		<div class="spy-content">
+		    <div class="clearfix">
+				<h4 id="spy1">预订须知</h4>
+				<div class="jingqu-content">
+					<div class="strong" style="margin-top:45px;">优待政策</div>
+					<p>免票人群：儿童身高1.2米（不含）以下免票。</p>
+					<p>优惠人群：全日制大、中、小学生凭着有效学生证可购买优惠价。 </p>
+					<p>以上信息仅供参考，具体请以景区当天披露为准。</p>
+					<div class="strong">温馨提示</div>
+					<p>为普及旅游安全知识及旅游文明公约，使您的旅程顺利圆满完成，特制定《易房云旅游告游客注意事项》，请您认真阅读并切实遵守。</p>
+					<div class="strong">安全指南</div>
+					<p>旅游安全是旅游的生命线，为保障游客“住得安心、吃得放心、玩的舒心”，携程从出行常识、旅游活动和特殊人群三方面为您提供旅游安全指南。出行前，提醒您仔细阅读相关内容，重视旅游安全，使您的出游真正成为“快乐之游、难忘之游、收获之游”。</p>
+				</div>
+			</div>
+            <div class="clearfix">
+				<h4 id="spy2">景点简介</h4>
+				<div class="jingqu-content">
+					<ul class="ts">
+						<li><span class="button bg-yellow">特色1</span>首座矿物为概念所建的主题乐园！</li>
+						<li><span class="button bg-yellow">特色2</span>国家AAAA级旅游景区，省级科普教育基地！</li>
+						<li><span class="button bg-yellow">特色3</span>花都区十大文化名片！</li>
+					</ul>
+					<p>石头记矿物园是目前世界上首座以矿物园为概念所建的主题乐园。“矿物园”地下奇石世界，包括时空隧道、流星石、满汉全席、海洋之梦、水晶观音、四大国石等主题展区。其中满汉全席冠古绝今的石宴大全、海洋之梦如梦如幻的水晶船以及世界最大的水晶观音，为奇石世界三大亮点。主题商场则准备了花都珠宝城所有厂家产品，让游客享受原产地快乐购物的妙趣。花都最浪漫的水晶餐厅向游客提供红酒、咖啡等饮品和地道美食，其独特的水晶元素氛围，神秘感十足。</p>
+					<div class="img2"><img src="../images/ad/420x230.jpg" alt=""><img src="../images/ad/420x230.jpg" alt=""></div>
+					<p>专家点评：作为世界首创以石头为主角的博物馆，花都石头记矿物园犹如一本石头的教科书，向游客解读每一块石头经过的历史和磨难，并展示这个地球上各种各样的富有传奇的奇石、化石、宝石。 
+	满汉全席：石头记历经数十年收集苍天造物、自然天成的各种"食"材，并礼请著名工艺美术师主持，动员上百名技艺精湛的能工巧匠通过三年多的集体创作，终于端出此一席四大桌，内有农家风味、山珍、海味、小吃等，款款美食栩栩如真，令人垂涎欲滴，堪称世界第一冠绝古今的石宴大全。</p>
+					<div class="img2"><img src="../images/ad/420x230.jpg" alt=""><img src="../images/ad/420x230.jpg" alt=""></div>
+	                <p>海洋之梦：变幻莫测的大海，孕育了数不尽的地球瑰宝，捧起一朵浪花，化作五彩珠贝和火红的珊瑚，为你的心灵带来美绝深邃的惊喜，就像逐一场梦，一场海洋之梦。珊瑚是台湾最著名的海洋奇宝，产于温暖的大洋水域中，由称为珊瑚虫的海洋生物骨骼遗物生成，红色的珊瑚最为珍贵稀有，台湾出产的珊瑚工艺美术品世界闻名。</p>
+	                <p>通灵宝玉：贾宝玉的前世今生红楼梦，真石头的心动体验石头记，通灵宝玉是《红楼梦》里贾宝玉衔玉降生的宝物，象征富贵好命，吉祥如意，一生平安。</p>
+	                <p>它是中国玉石文化的象征之一，也是人们怀石拥玉的终极梦想。</p>
+	                <div class="img2"><img src="../images/ad/420x230.jpg" alt=""><img src="../images/ad/420x230.jpg" alt=""></div>
+	                <p>时空隧道：清凉。幽暗。古朴。深邃。这是一段探索地球奥妙行程的开始，步入“时空隧道”，时光瞬间倒流，让您回溯到亿万年前的远古，体验宇宙洪荒，追问生命起源……　</p>
+	                <p>夜明珠：世界上，有二十多种矿物在外来能量的激发下，能发出可见光，最具代表性的是有磷光现象的萤石。最优质的萤石磷光珠，强光熠熠，恒光不衰，这便是世人传说的“夜明珠”。在中国5000年的文明史中，夜明珠曾是最具神秘色彩，最为稀有，最为贵重的珍宝，并为皇家收藏</p>
+	                <div class="img2"><img src="../images/ad/420x230.jpg" alt=""><img src="../images/ad/420x230.jpg" alt=""></div>
+                </div>
+     		</div>
+     		<div class="clearfix">
+			    <h4 id="spy3">交通指南</h4>
+			    <div>
+			    	<div class="jingqu-content map-baidu">
+			    		<img width="100%" src="../images/ad/map.jpg">
+			    		<p>交通信息</p>
+			    		<p>自驾车：</p>
+			    		<p>1、经广清高速公路，在赤坭或新华出口下高速，经风神大道右转至红棉大道，直行至迎宾大道左转到底后，右转约行驶300米到      达石头记矿物园。</p>
+			    		<p>2、如选择机场高速公路，可从太成出口下高速，沿迎宾大道直行到底（约15公里），右转行驶300米，到达石头记矿物园。
+公共交通：可搭乘花都区9路或21路公交车至石头记站。</p>
+			    	</div>
+			    </div>
+			</div>
+            <div class="clearfix">
+			    <h4 id="spy4">用户点评</h4>
+			    <div class="jingqu-content yun-comments-review" style="padding-top:30px;">
+			        <ul class="rev-all clearfix">
+			        	<li>满意度<strong>100%</strong></li>
+			        	<li>
+			        		<dl class="dl-inline">
+			        		    <dt>满意</dt>
+			        		    <dd>
+				        		    <div class="progress">
+										<div class="progress-bar bg-yellow" style="width: 100%;">
+											100%</div>
+									</div>
+								</dd>
+							</dl>
+							<dl class="dl-inline">
+			        		    <dt>一般</dt>
+			        		    <dd>
+				        		    <div class="progress">
+										<div class="progress-bar bg-blue" style="width: 50%;">
+											50%</div>
+									</div>
+								</dd>
+							</dl>
+							<dl class="dl-inline">
+			        		    <dt>不满意</dt>
+			        		    <dd>
+				        		    <div class="progress">
+										<div class="progress-bar bg-green" style="width: 50%;">
+											50%</div>
+									</div>
+								</dd>
+							</dl>
+			        	</li>
+			        	<li>
+			        		<div class="last clearfix">
+			        		    <div>景区风景<strong>5</strong>/5</div>
+			        		    <div>餐饮住宿<strong>5</strong>/5</div>
+			        		    <div>景点门票<strong>5</strong>/5</div>
+			        		</div>
+			        	</li>
+			        </ul>
+
+					<div class="tab">
+						<div class="tab-head">
+							<ul class="tab-nav">
+								<li class="active"><a href="#tab-qbdp">全部点评</a> </li>
+								<li><a href="#tab-my">满意（0）</a> </li>
+								<li><a href="#tab-yb">一般（10）</a> </li>
+								<li><a href="#tab-bmy">不满意（10）</a> </li>
+							</ul>
+						</div>
+						<div class="tab-body tab-body-bordered">
+							<div class="tab-panel clearfix active" id="tab-qbdp">
+							    <dl>
+							    	<dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+							    	<dd>
+							    		<div class="summary">
+							    			<span class="button bg-red">满意</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+							    		</div>
+							    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+							    	</dd>
+							    </dl>
+							    <dl>
+							    	<dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+							    	<dd>
+							    		<div class="summary">
+							    			<span class="button bg-green">一般</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+							    		</div>
+							    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+							    	</dd>
+							    </dl>
+							    <dl>
+							    	<dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+							    	<dd>
+							    		<div class="summary">
+							    			<span class="button bg-gray">不满意</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+							    		</div>
+							    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+							    		<div class="banner" data-pointer="1" data-interval="6" data-item="2" data-small="3" data-middle="4" data-big="5">
+											<ul class="carousel">
+												<li class="item"><img src="../images/ad/qy-4.jpg"></li>
+												<li class="item"><img src="../images/ad/qy-5.jpg"></li>
+												<li class="item"><img src="../images/ad/qy-6.jpg"></li>
+												<li class="item"><img src="../images/ad/qy-7.jpg"></li>
+												<li class="item"><img src="../images/ad/qy-8.jpg"></li>
+												<li class="item"><img src="../images/ad/qy-6.jpg"></li>
+												<li class="item"><img src="../images/ad/qy-7.jpg"></li>
+												<li class="item"><img src="../images/ad/qy-8.jpg"></li>
+				
+											</ul>
+										</div>
+							    	</dd>
+							    </dl>
+							    <dl>
+							    	<dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+							    	<dd>
+							    		<div class="summary">
+							    			<span class="button bg-red">满意</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+							    		</div>
+							    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+							    	</dd>
+							    </dl>
+							    <dl>
+							    	<dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+							    	<dd>
+							    		<div class="summary">
+							    			<span class="button bg-red">满意</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+							    		</div>
+							    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+                                        
+										<div class="banner" data-pointer="1" data-interval="6" data-item="2" data-small="3" data-middle="4" data-big="5">
+											<ul class="carousel">
+												<li class="item"><img src="../images/ad/qy-4.jpg"></li>
+												<li class="item"><img src="../images/ad/qy-5.jpg"></li>
+												<li class="item"><img src="../images/ad/qy-6.jpg"></li>
+												<li class="item"><img src="../images/ad/qy-7.jpg"></li>
+												<li class="item"><img src="../images/ad/qy-8.jpg"></li>
+												<li class="item"><img src="../images/ad/qy-6.jpg"></li>
+												<li class="item"><img src="../images/ad/qy-7.jpg"></li>
+												<li class="item"><img src="../images/ad/qy-8.jpg"></li>
+				
+											</ul>
+										</div>
+
+							    	</dd>
+							    </dl>
+							    <ul class="pagination border-green clearfix">
+								    <li><a href="#">上一页</a> </li>
+								    <li class="active"><a href="#">1</a> </li>
+								    <li><a href="#">2</a> </li>
+								    <li><a href="#">3</a> </li>
+								    <li><a href="#">4</a> </li>
+								    <li><a href="#">5</a> </li>
+								    <li><a href="#">下一页</a> </li>
+								</ul>
+							    
+										
+						    </div>
+						    
+							<div class="tab-panel clearfix" id="tab-my">
+								满意</div>
+							<div class="tab-panel clearfix" id="tab-yb">
+								一般</div>
+						    <div class="tab-panel clearfix" id="tab-bmy">
+								不满意</div>
+						</div>
+                        
+					</div>
+                	
+					
+
+
+
+			    	
+			    </div>
+
+
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="yun-footer margin-large-top" style="background:#F2F2F2">
+    <div class="ycontainer">
+		<div class="line">
+			<div class="x8">
+				<div class="foot-nav clearfix">
+					<a href="">关于我们</a>
+					<a href="">联系我们</a>
+					<a href="">产品与服务</a>
+					<a href="">服务条款</a>
+					<a href="">网站地图</a>
+					<a href="">意见反馈</a>
+				</div>
+				<p>版权所有 © 2016-2017　 易房云平台-http://www.yun.com 　　网站常年法律顾问：吴劲松律师</p>
+				<p><b>粤ICP备14011867号-1</b>技术支持:深圳市易建房科技有限公司</p>
+			</div>
+			<div class="x4">
+				<dl class="box-r">
+	                <dt><img width="88" src="../images/er.jpg" alt="集装箱活动房"></dt>
+	                <dd>
+	                  <h4>微信扫一扫</h4>
+	                  <p>扫描二维码，即刻与小易亲密互动，还有劲爆惊喜等你来！</p>
+	                </dd>
+	            </dl>
+			</div>
+		</div>
+		<img class="safe" src="../images/safe.png" alt="">
+	</div>
+</div>
+
+
+
+</body>
+</html>

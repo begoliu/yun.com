@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>房源详情</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="../js/jquery.js"></script>
+    <link rel="stylesheet" href="../pintu/pintu.css">
+    <link rel="stylesheet" href="../css/yun.css">
+    <script src="../pintu/pintu.js"></script>
+    <script src="../pintu/respond.js"></script>
+    
+</head>
+<body>
+
+<div class="yun-min-top clearfix">
+    <div class="ycontainer">
+		<!-- <div class="b-l">
+			你好！<a href="#"><strong>张三</strong></a><span>|</span><a href="#">退出</a><span>|</span><a href="#">消息</a>
+		</div> -->
+		<div class="b-l">
+			<a href="#"><strong>登录</strong></a><a href="#"><strong style="color:#FF7E00;margin-left:15px;">注册</strong></a>
+		</div>
+		<div class="b-r">
+            <a href="">网站首页</a><span>|</span><a href="">商家中心</a><span>|</span><a href="">会员中心</a><span>|</span><a href="">联系客服</a>
+		</div>
+	</div>
+</div>
+<div class="yun-top">
+    <div class="ycontainer">
+	    <div class="line line-big ">
+	   		<div class="x4 logo"><a href="#"><img src="../images/logo.png"></a></div>
+		    <div class="x8">
+			    <ul class="nav nav-menu nav-inline nav-right nav-navicon">
+					<li><a href="#">首页</a> </li>
+					<li><a href="#">房源列表</a> </li>
+					<li><a href="#">招商加盟</a> </li>
+					<li class="active"><a href="#">新闻中心</a> </li>
+					<li><a href="#">关于我们</a> </li>
+				</ul>
+			</div>
+	    </div>
+	</div>
+</div>
+<link rel="stylesheet" href="../css/imgzoom.css">
+<script src="../js/imgzoom.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+	  var showproduct = {
+		  "boxid":"showbox",
+		  "sumid":"showsum",
+		  "boxw":450,//宽度,该版本中请把宽高填写成一样
+		  "boxh":250,//高度,该版本中请把宽高填写成一样
+		  "sumw":90,//列表每个宽度,该版本中请把宽高填写成一样
+		  "sumh":90,//列表每个高度,该版本中请把宽高填写成一样
+		  "sumi":10,//列表间隔
+		  "sums":4,//列表显示个数
+		  "sumsel":"sel",
+		  "sumborder":1,//列表边框，没有边框填写0，边框在css中修改
+		  "lastid":"showlast",
+		  "nextid":"shownext"
+		  };//参数定义	  
+	 $.ljsGlasses.pcGlasses(showproduct);//方法调用，务必在加载完后执行
+  });
+</script>
+<div class="ycontainer clearfix">
+    <ul class="yun-breadcrumb">
+		    <li><a href="">首页</a></li>
+		    <li><a href="">我要买房</a></li>
+		    <li><span>房源当前页</span></li>
+    </ul>
+    <dl class="fy-main clearfix">
+    	<dt>
+			<div id="showbox">
+				<img src="../images/ad/qy-4.jpg" width="401" height="251" />
+				<img src="../images/ad/qy-5.jpg" width="400" height="250" />
+				<img src="../images/ad/qy-6.jpg" width="398" height="251" />
+				<img src="../images/ad/qy-7.jpg" width="399" height="251" />
+				<img src="../images/ad/qy-8.jpg" width="399" height="251" />
+			</div><!--展示图片盒子-->
+			<div id="showsum"></div><!--展示图片里边-->
+			<div class="showpage">
+			    <a href="javascript:void(0);" id="showlast"> < </a>
+			    <a href="javascript:void(0);" id="shownext"> > </a>
+			</div>
+
+    	</dt>
+    	<dd>
+    		<div class="tit-lr clearfix">
+		    <div class="tit">
+		       <h2>沙茶面</h2>
+		       <span><em>菜系：</em>其它小吃</span>
+		    </div>
+		    <div class="xin">41</div>
+    		</div>
+    		<p> 沙茶面(sa-de-mī)东南亚广泛流行的著名的汤类面食小吃，在中国的沙茶面分有闽南的沙茶，广东潮汕的沙茶等风味，其妙处在在于沙茶酱的制作，用沙茶酱再制作汤头，而其中以厦门的沙茶面为典范，闽南美食大师杨继波老先生的沙茶面配方的唯一传授徒弟厨师技师王大全继承传统使之发扬光大。沙茶酱主料有虾干，鱼干，葱头，蒜头，老姜等十几种食材构成，经油炸香酥再研磨细，制成沙茶酱待用。</p>
+
+    	</dd>
+    </dl>
+    <div class="where-eat">
+    	<div class="tit-eat"><span>哪里吃</span></div>
+    	<ul class="clearfix">
+    		<li class="ml">
+    		    <a href="">
+    				<img src="../images/ad/280x190.jpg" alt="">
+    				<div class="tit">亚龙湾红树林度假酒店</div>
+    				<p>地址： 三亚亚龙湾国家旅游度假区中心位置</p>
+    				<p>商户电话：0898-88558888-6110</p>
+    				<p>预约时间：11：00-21：00</p>
+    			</a>
+    		</li>
+    		<li>
+    		    <a href="">
+    				<img src="../images/ad/280x190.jpg" alt="">
+    				<div class="tit">亚龙湾红树林度假酒店</div>
+    				<p>地址： 三亚亚龙湾国家旅游度假区中心位置</p>
+    				<p>商户电话：0898-88558888-6110</p>
+    				<p>预约时间：11：00-21：00</p>
+    			</a>
+    		</li>
+    		<li>
+    		    <a href="">
+    				<img src="../images/ad/280x190.jpg" alt="">
+    				<div class="tit">亚龙湾红树林度假酒店</div>
+    				<p>地址： 三亚亚龙湾国家旅游度假区中心位置</p>
+    				<p>商户电话：0898-88558888-6110</p>
+    				<p>预约时间：11：00-21：00</p>
+    			</a>
+    		</li>
+    		<li class="ml">
+    		    <a href="">
+    				<img src="../images/ad/280x190.jpg" alt="">
+    				<div class="tit">亚龙湾红树林度假酒店</div>
+    				<p>地址： 三亚亚龙湾国家旅游度假区中心位置</p>
+    				<p>商户电话：0898-88558888-6110</p>
+    				<p>预约时间：11：00-21：00</p>
+    			</a>
+    		</li>
+    		<li>
+    		    <a href="">
+    				<img src="../images/ad/280x190.jpg" alt="">
+    				<div class="tit">亚龙湾红树林度假酒店</div>
+    				<p>地址： 三亚亚龙湾国家旅游度假区中心位置</p>
+    				<p>商户电话：0898-88558888-6110</p>
+    				<p>预约时间：11：00-21：00</p>
+    			</a>
+    		</li>
+    		<li>
+    		    <a href="">
+    				<img src="../images/ad/280x190.jpg" alt="">
+    				<div class="tit">亚龙湾红树林度假酒店</div>
+    				<p>地址： 三亚亚龙湾国家旅游度假区中心位置</p>
+    				<p>商户电话：0898-88558888-6110</p>
+    				<p>预约时间：11：00-21：00</p>
+    			</a>
+    		</li>
+    		
+    	</ul>
+
+    </div>
+		
+</div>
+
+
+<div class="yun-footer margin-large-top" style="background:#F2F2F2">
+    <div class="ycontainer">
+		<div class="line">
+			<div class="x8">
+				<div class="foot-nav clearfix">
+					<a href="">关于我们</a>
+					<a href="">联系我们</a>
+					<a href="">产品与服务</a>
+					<a href="">服务条款</a>
+					<a href="">网站地图</a>
+					<a href="">意见反馈</a>
+				</div>
+				<p>版权所有 © 2016-2017　 易房云平台-http://www.yun.com 　　网站常年法律顾问：吴劲松律师</p>
+				<p><b>粤ICP备14011867号-1</b>技术支持:深圳市易建房科技有限公司</p>
+			</div>
+			<div class="x4">
+				<dl class="box-r">
+	                <dt><img width="88" src="../images/er.jpg" alt="集装箱活动房"></dt>
+	                <dd>
+	                  <h4>微信扫一扫</h4>
+	                  <p>扫描二维码，即刻与小易亲密互动，还有劲爆惊喜等你来！</p>
+	                </dd>
+	            </dl>
+			</div>
+		</div>
+		<img class="safe" src="../images/safe.png" alt="">
+	</div>
+</div>
+
+
+
+</body>
+</html>

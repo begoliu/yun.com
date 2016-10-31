@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>房源详情</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/yun.js"></script>
+    <link rel="stylesheet" href="../pintu/pintu.css">
+    <link rel="stylesheet" href="../css/yun.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <script src="../pintu/pintu.js"></script>
+    <script src="../pintu/respond.js"></script>
+    
+</head>
+<body>
+
+<div class="yun-min-top clearfix">
+    <div class="ycontainer">
+		<!-- <div class="b-l">
+			你好！<a href="#"><strong>张三</strong></a><span>|</span><a href="#">退出</a><span>|</span><a href="#">消息</a>
+		</div> -->
+		<div class="b-l">
+			<a href="#"><strong>登录</strong></a><a href="#"><strong style="color:#FF7E00;margin-left:15px;">注册</strong></a>
+		</div>
+		<div class="b-r">
+            <a href="">网站首页</a><span>|</span><a href="">商家中心</a><span>|</span><a href="">会员中心</a><span>|</span><a href="">联系客服</a>
+		</div>
+	</div>
+</div>
+<div class="yun-top">
+    <div class="ycontainer">
+	    <div class="line line-big ">
+	   		<div class="x4 logo"><a href="#"><img src="../images/logo.png"></a></div>
+		    <div class="x8">
+			    <ul class="nav nav-menu nav-inline nav-right nav-navicon">
+					<li><a href="#">首页</a> </li>
+					<li><a href="#">房源列表</a> </li>
+					<li><a href="#">招商加盟</a> </li>
+					<li class="active"><a href="#">新闻中心</a> </li>
+					<li><a href="#">关于我们</a> </li>
+				</ul>
+			</div>
+	    </div>
+	</div>
+</div>
+<link rel="stylesheet" href="../css/imgzoom.css">
+<script src="../js/imgzoom.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+	  var showproduct = {
+		  "boxid":"showbox",
+		  "sumid":"showsum",
+		  "boxw":450,//宽度,该版本中请把宽高填写成一样
+		  "boxh":250,//高度,该版本中请把宽高填写成一样
+		  "sumw":90,//列表每个宽度,该版本中请把宽高填写成一样
+		  "sumh":90,//列表每个高度,该版本中请把宽高填写成一样
+		  "sumi":10,//列表间隔
+		  "sums":4,//列表显示个数
+		  "sumsel":"sel",
+		  "sumborder":1,//列表边框，没有边框填写0，边框在css中修改
+		  "lastid":"showlast",
+		  "nextid":"shownext"
+		  };//参数定义	  
+	 $.ljsGlasses.pcGlasses(showproduct);//方法调用，务必在加载完后执行
+  });
+</script>
+<div class="ycontainer clearfix">
+    <ul class="yun-breadcrumb">
+		    <li><a href="">首页</a></li>
+		    <li><a href="">我要买房</a></li>
+		    <li><span>房源当前页</span></li>
+    </ul>
+    <dl class="fy-main clearfix">
+    	<dt>
+			<div id="showbox">
+				<img src="../images/ad/qy-4.jpg" width="401" height="251" />
+				<img src="../images/ad/qy-5.jpg" width="400" height="250" />
+				<img src="../images/ad/qy-6.jpg" width="398" height="251" />
+				<img src="../images/ad/qy-7.jpg" width="399" height="251" />
+				<img src="../images/ad/qy-8.jpg" width="399" height="251" />
+			</div><!--展示图片盒子-->
+			<div id="showsum"></div><!--展示图片里边-->
+			<div class="showpage">
+			    <a href="javascript:void(0);" id="showlast"> < </a>
+			    <a href="javascript:void(0);" id="shownext"> > </a>
+			</div>
+
+    	</dt>
+    	<dd>
+    	 	<h1>鼓励屿端头别墅整租<span>8房3厅</span></h1>
+		    <div class="tit-meta text-gray margin-small-top">占地面积广、交通便利、豪华装修</div>
+		    <div class="margin-top clearfix">
+		    	<div class="float-left">房源编号：<em>[183365546454]</em></div>
+		    	<div class="float-right">评估价格：2500万</div>
+		    </div>
+		    <ul class="score clearfix">
+		    	<li><em>98%</em>满意度</li>
+		    	<li><em>726</em>点评数</li>
+		    	<li><em>1204</em>关注度</li>
+		    </ul>
+		    <div class="button button-small bg-green margin-bottom">房屋特色</div>
+		    <p><i>★</i>酒吧和咖啡厅供应世界级美餐，加上完美的服务和一流设施，使美味。</p>
+		    <p><i>★</i>酒吧和咖啡厅供应世界级美餐，加上完美的服务和一流设施，使美忘。</p>
+		    <p><i>★</i>酒吧和咖啡厅供应世界级美餐，加上完美的服务和一流设施倍难忘。</p>
+    	</dd>
+    </dl>
+
+    <div class="fy-main-show">
+    	<ul class="js-tab clearfix" name="fangyuan">
+			<li class="active"><a href="javascript:void(0)">房源详情</a></li>
+			<li><a href="javascript:void(0)">附近景区</a> </li>
+			<li><a href="javascript:void(0)">景区指南</a> </li>
+			<li><a href="javascript:void(0)">景区交通</a></li>
+			<li><a href="javascript:void(0)">景区景点</a></li>
+			<li><a href="javascript:void(0)">景区住宿</a></li>
+			<li><a href="javascript:void(0)">景区美食</a></li>
+			<li><a href="javascript:void(0)">景区购物</a></li>
+			<li><a href="javascript:void(0)">景区玩乐</a></li>
+		</ul>
+		<div class="js-tab-fangyuan">
+	        <div class="js-tab-panel active">
+                <div class="tab tab-video">
+					<div class="tab-head">
+						<ul class="tab-nav clearfix">
+							<li class="active"><a href="#tab-spkf">视频看房</a></li>
+							<li><a href="#tab-vrxnkf">VR虚拟看房</a> </li>
+						</ul>
+					</div>
+					<div class="tab-body" style="display:block;">
+						<div class="tab-panel active" id="tab-spkf">
+						    <div class="video">
+						        <img src='../images/ad/video.jpg'>
+						    </div>
+                            
+						</div>
+						<div class="tab-panel" id="tab-vrxnkf">
+						    <div class="video">
+						        VR虚拟看房
+						    </div>
+
+						</div>
+					</div>
+				</div>
+				<div class="fy-show-tit clearfix"><div class="tit-left">房源介绍</div></div>
+				<ul class="fy-pro-list list-text list-underline list-striped">
+					<li>1、房源简介：曦城三期联排端头别墅，占地堪比端头，5套房 1工人房 1保姆房 1司机房，地下室230平（已做好酒窖、桌球室、
+ 影音室一应俱全） ，上下四层（地下一层地面三层），做好电梯，私家花园180平 ，客厅挑高，通风采光好 一个私家车库2
+ -3个固定车位，使用率拓展达150%。</li>
+					<li>2、装修风格：新式古典豪华装修，家私齐全，配套高档温馨，业主首次出租，拎包入住即可。</li>
+					<li>3、业主信息：业主系潮州人，现在自己住在里面，对自己的房子十分爱护，为人和蔼可亲，易相处。</li>
+					<li>4、小区位置：广深高速保安出口东侧，近地铁（5号环中线兴东站），交通十分便利。</li>
+					<li>5、小区特点：小区环境优美，容积率仅0.5，配套完善，宝安公园近在咫尺，休闲、健身的好地方，招商地产统一管理，管理非
+ 常严格，保安24巡逻，安全性高！</li>
+				</ul>
+				<div class="fy-show-tit clearfix"><div class="tit-left">位置交通</div></div>
+				<div class="map-baidu clearfix">
+		    		<img width="100%" src="../images/ad/map.jpg">
+		    		<p><strong>交通信息</strong></p>
+		    		<p>自驾车：</p>
+		    		<p>1、经广清高速公路，在赤坭或新华出口下高速，经风神大道右转至红棉大道，直行至迎宾大道左转到底后，右转约行驶300米到      达石头记矿物园。</p>
+		    		<p>2、如选择机场高速公路，可从太成出口下高速，沿迎宾大道直行到底（约15公里），右转行驶300米，到达石头记矿物园。
+公共交通：可搭乘花都区9路或21路公交车至石头记站。</p>
+			    </div>
+			    <div class="fy-comments clearfix">
+			    	<div class="fy-left">
+                        <!--评论开始-->
+			    		<div class="yun-comments-review" style="padding-top:30px;">
+						    <ul class="rev-all clearfix">
+						        <li>满意度<strong>100%</strong></li>
+						        <li>
+					        		<dl class="dl-inline">
+					        		    <dt>满意</dt>
+					        		    <dd>
+						        		    <div class="progress">
+												<div class="progress-bar bg-yellow" style="width: 100%;">
+													100%</div>
+											</div>
+										</dd>
+									</dl>
+									<dl class="dl-inline">
+					        		    <dt>一般</dt>
+					        		    <dd>
+						        		    <div class="progress">
+												<div class="progress-bar bg-blue" style="width: 50%;">
+													50%</div>
+											</div>
+										</dd>
+									</dl>
+									<dl class="dl-inline">
+					        		    <dt>不满意</dt>
+					        		    <dd>
+						        		    <div class="progress">
+												<div class="progress-bar bg-green" style="width: 50%;">
+													50%</div>
+											</div>
+										</dd>
+									</dl>
+						        </li>
+					        	<li>
+					        		<div class="last clearfix">
+					        		    <div>卫生评分<strong>4.8</strong></div>
+					        		    <div>服务评分<strong>4.7</strong></div>
+					        		    <div>设备设施<strong>4.5</strong></div>
+					        		    <div>位置评分<strong>4.8</strong></div>
+					        		</div>
+					        	</li>
+						    </ul>
+							<div class="tab">
+								<div class="tab-head">
+									<ul class="tab-nav clearfix">
+										<li class="active"><a href="#tab-qbdp">全部点评</a> </li>
+										<li class=""><a href="#tab-my">满意（0）</a> </li>
+										<li class=""><a href="#tab-yb">一般（10）</a> </li>
+										<li class=""><a href="#tab-bmy">不满意（10）</a> </li>
+									</ul>
+								</div>
+								<div class="tab-body tab-body-bordered">
+									<div class="tab-panel clearfix active" id="tab-qbdp">
+										<dl>
+										    <dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+										    <dd>
+									    		<div class="summary">
+									    			<span class="button bg-red">满意</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+									    		</div>
+									    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+									    	</dd>
+										</dl>
+									    <dl>
+									    	<dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+									    	<dd>
+									    		<div class="summary">
+									    			<span class="button bg-green">一般</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+									    		</div>
+									    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+									    	</dd>
+									    </dl>
+									    <dl>
+									    	<dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+									    	<dd>
+									    		<div class="summary">
+									    			<span class="button bg-gray">不满意</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+									    		</div>
+									    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+									    		<div class="banner" data-pointer="1" data-interval="6" data-item="2" data-small="3" data-middle="4" data-big="5">
+													<ul class="carousel" style="width: 1160px; left: -435px;">
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-4.jpg"></li>
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-5.jpg"></li>
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-6.jpg"></li>
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-7.jpg"></li>
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-8.jpg"></li>
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-6.jpg"></li>
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-7.jpg"></li>
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-8.jpg"></li>
+													</ul>
+												<ul class="pointer" style="left: 340.5px;"><li value="1" class=""></li> <li value="2" class="active"></li></ul><div class="pager-prev icon-angle-left"></div><div class="pager-next icon-angle-right"></div></div>
+									    	</dd>
+									    </dl>
+									    <dl>
+									    	<dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+									    	<dd>
+									    		<div class="summary">
+									    			<span class="button bg-red">满意</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+									    		</div>
+									    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+									    	</dd>
+									    </dl>
+									    <dl>
+									    	<dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+									    	<dd>
+									    		<div class="summary">
+									    			<span class="button bg-red">满意</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+									    		</div>
+									    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+		                                        
+												<div class="banner" data-pointer="1" data-interval="6" data-item="2" data-small="3" data-middle="4" data-big="5">
+													<ul class="carousel" style="width: 1160px; left: -435px;">
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-4.jpg"></li>
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-5.jpg"></li>
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-6.jpg"></li>
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-7.jpg"></li>
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-8.jpg"></li>
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-6.jpg"></li>
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-7.jpg"></li>
+														<li class="item" style="width: 145px;"><img src="../images/ad/qy-8.jpg"></li>
+													</ul>
+												<ul class="pointer" style="left: 340.5px;"><li value="1" class=""></li> <li value="2" class="active"></li></ul><div class="pager-prev icon-angle-left"></div><div class="pager-next icon-angle-right"></div></div>
+
+									    	</dd>
+									    </dl>
+									    <ul class="pagination border-green" style="width:100%;">
+										    <li><a href="#">上一页</a> </li>
+										    <li class="active"><a href="#">1</a> </li>
+										    <li><a href="#">2</a> </li>
+										    <li><a href="#">3</a> </li>
+										    <li><a href="#">4</a> </li>
+										    <li><a href="#">5</a> </li>
+										    <li><a href="#">下一页</a> </li>
+										</ul>
+								    </div>
+									<div class="tab-panel clearfix" id="tab-my">
+										满意
+									</div>
+									<div class="tab-panel clearfix" id="tab-yb">
+										一般
+									</div>
+								    <div class="tab-panel clearfix" id="tab-bmy">
+										不满意
+									</div>
+							    </div>
+							</div>
+						</div>
+					    <!--评论结束-->
+			    	</div>
+			    	<div class="fy-right">
+		    			<div class="yun-list-dl-img mt30">
+		    			    <div class="dh">我浏览过的房源</div>
+		    			    <div class="box">
+		    			        <a href="#">
+			    			         <dl class="clearfix">
+			    			         	<dt><img width="70" height="50" src="../images/ad/120x120.jpg"></dt>
+			    			         	<dd>
+			    			         		<div class="tit">厦门鼓浪屿爱在天使大屋</div>
+			    			         		<p>鼓浪屿复兴路58号</p>
+			    			         	</dd>
+			    			         </dl>
+		    			        </a>
+		    			        <a href="#">
+			    			         <dl class="clearfix">
+			    			         	<dt><img width="70" height="50" src="../images/ad/120x120.jpg"></dt>
+			    			         	<dd>
+			    			         		<div class="tit">厦门鼓浪屿爱在天使大屋</div>
+			    			         		<p>鼓浪屿复兴路58号</p>
+			    			         	</dd>
+			    			         </dl>
+		    			        </a>
+		    			        <a href="#">
+			    			         <dl class="clearfix">
+			    			         	<dt><img width="70" height="50" src="../images/ad/120x120.jpg"></dt>
+			    			         	<dd>
+			    			         		<div class="tit">厦门鼓浪屿爱在天使大屋</div>
+			    			         		<p>鼓浪屿复兴路58号</p>
+			    			         	</dd>
+			    			         </dl>
+		    			        </a>
+		    			        <a href="#">
+			    			         <dl class="clearfix">
+			    			         	<dt><img width="70" height="50" src="../images/ad/120x120.jpg"></dt>
+			    			         	<dd>
+			    			         		<div class="tit">厦门鼓浪屿爱在天使大屋</div>
+			    			         		<p>鼓浪屿复兴路58号</p>
+			    			         	</dd>
+			    			         </dl>
+		    			        </a>
+		    			    </div>
+		    			</div>
+			    	</div>
+			    </div>
+			</div>
+			<!-- 附近景区 -->
+			<div class="js-tab-panel yun-fjjq-panel">
+			    <div class="yun-linecenter-tit"><strong>鼓浪屿鼓浪屿</strong></div>
+				<p>鼓浪屿是一个令很多人都向往的地方，这里的万国建筑，游弋在琴声悠扬的海滩，或为探寻古老院落的边边角角，或只为单独的去寻找某只猫或狗，或只为拿着一本盖章本到各个小特色店盖章…… 有人说鼓浪屿是情侣的浪漫甜蜜之所，也是喵星人的秘密基地，更是文艺小清新的聚集地。</p>
+				
+                <div class="tab tab-radius">
+					<div class="tab-head">
+						<span class="tab-more"><a href="#">更多景点》</a></span>
+						<ul class="tab-nav clearfix">
+							<li class="active"><a href="#eat-by">必游</a> </li>
+							<li><a href="#eat-bc">必吃</a> </li>
+							<li><a href="#eat-bg">必逛</a> </li>
+						</ul>
+					</div>
+					<div class="tab-body">
+						<div class="tab-panel active" id="eat-by">
+						    <div class="yun-list-boxA yun-list-boxA-3 yun-list-a clearfix js-box-column" data-grid="3">
+								<a class="ml-remove" href="">
+							 		<img src="../images/ad/280x190.jpg" alt="">
+							 		<div class="plr10">
+								 		<div class="tit clearfix">
+								 			<strong>鼓浪屿1</strong>
+								 			<span>满意度：<b>98%</b></span>
+								 		</div>
+								 		<p>登高望远，站的高才能看的更远，才能把无限的风光和景色尽收眼底...</p>
+							 		</div>
+								</a>
+								<a href="">
+							 		<img src="../images/ad/280x190.jpg" alt="">
+							 		<div class="plr10">
+								 		<div class="tit clearfix">
+								 			<strong>鼓浪屿2</strong>
+								 			<span>满意度：<b>98%</b></span>
+								 		</div>
+								 		<p>登高望远，站的高才能看的更远，才能把无限的风光和景色尽收眼底...</p>
+							 		</div>
+								</a>
+								<a href="">
+							 		<img src="../images/ad/280x190.jpg" alt="">
+							 		<div class="plr10">
+								 		<div class="tit clearfix">
+								 			<strong>鼓浪屿3</strong>
+								 			<span>满意度：<b>98%</b></span>
+								 		</div>
+								 		<p>登高望远，站的高才能看的更远，才能把无限的风光和景色尽收眼底...</p>
+							 		</div>
+								</a>
+								<a href="">
+							 		<img src="../images/ad/280x190.jpg" alt="">
+							 		<div class="plr10">
+								 		<div class="tit clearfix">
+								 			<strong>鼓浪屿4</strong>
+								 			<span>满意度：<b>98%</b></span>
+								 		</div>
+								 		<p>登高望远，站的高才能看的更远，才能把无限的风光和景色尽收眼底...</p>
+							 		</div>
+								</a>
+								<a href="">
+							 		<img src="../images/ad/280x190.jpg" alt="">
+							 		<div class="plr10">
+								 		<div class="tit clearfix">
+								 			<strong>鼓浪屿</strong>
+								 			<span>满意度：<b>98%</b></span>
+								 		</div>
+								 		<p>登高望远，站的高才能看的更远，才能把无限的风光和景色尽收眼底...</p>
+							 		</div>
+								</a>
+								<a href="">
+							 		<img src="../images/ad/280x190.jpg" alt="">
+							 		<div class="plr10">
+								 		<div class="tit clearfix">
+								 			<strong>鼓浪屿</strong>
+								 			<span>满意度：<b>98%</b></span>
+								 		</div>
+								 		<p>登高望远，站的高才能看的更远，才能把无限的风光和景色尽收眼底...</p>
+							 		</div>
+								</a>
+							</div>	
+						</div>
+						<div class="tab-panel" id="eat-bc">
+							必吃
+						</div>
+						<div class="tab-panel" id="eat-bg">
+							必逛
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 附近景区end -->
+
+			<!-- 景区指南 -->
+			<div class="js-tab-panel yun-jqzn-panel"">
+                <div class="tab tab-landscape clearfix">
+					<div class="tab-head">
+						<ul class="tab-nav clearfix">
+							<li class="active"><a href="#jqzn-gk">概括</a> </li>
+							<li><a href="#jqzn-lysj">旅游时间</a> </li>
+							<li><a href="#jqzn-hbbz">货币帮助</a> </li>
+							<li><a href="#jqzn-yzyp">衣着用品</a> </li>
+							<li><a href="#jqzn-cxxz">出行须知</a> </li>
+						</ul>
+					</div>
+					<div class="tab-body jqzn-panel">
+					    <div class="tab-panel active" id="jqzn-gk">
+							<div class="panel">
+								<div class="panel-head">
+									鼓励与概况
+								</div>
+								<div class="panel-body">
+								    <h4>简介</h4>
+								    <p>鼓浪屿是一个令很多人都向往的地方，这里的万国建筑，游弋在琴声悠扬的海滩，或为探寻古老院落的边边角角，或只为单独的去寻找某只猫或狗，或只为拿着一本盖章本到各个小特色店盖章…… 有人说鼓浪屿是情侣的浪漫甜蜜之所，也是喵星人的秘密基地，更是文艺小清新的聚集地。</p>
+								    <h4>区域分布</h4>
+								    <p>鼓浪屿位于福建省厦门岛西南隅，与厦门岛只隔一条鹭江。岛上由一条6公里的环岛路环绕，以轮渡码头为起点；从码头出来的龙头路，是鼓浪屿的商业聚集地；日光岩位于岛的南边，为岛上最高点，山上巨石嵯峨，叠成洞壑；菽庄花园在日光岩南麓海滨，而钢琴博物馆位于菽庄花园的“听涛轩”；皓月园位于鼓浪屿东部的覆鼎岩海滨。</p>
+								    <h4>历史文化</h4>
+								    <p><strong>历史</strong></p>
+								    <p>早在3000多年前的新石器时代，厦门岛上就有人类生活。明末清初，民族英雄郑成功据金门、厦门两岛为根据地抗击南下的清军，并于此操练水师，率兵东征，驱逐荷兰侵略者，收复台湾。鼓浪屿是郑成功最初的根据地。鸦片战争之后的20年间，鼓浪屿沦为殖民地，并在鼓浪屿建造领事馆。直至我国抗战胜利。1949年10月17日，鼓浪屿地区解放。2003年，撤销行政区，归属于厦门市思明区。</p>
+								    <p><strong>文化</strong></p>
+								    <p>从19世纪中叶起，伴随着基督教的传播，西方音乐开始涌进鼓浪屿，与鼓浪屿优雅的人居环境相融合，造就了鼓浪屿今日的音乐传统，培养出周淑安、林俊卿、殷承宗、陈佐煌、许斐平等一大批杰出的音乐家。如今，鼓浪屿的人均钢琴拥有率为全国第一，岛上有100多个音乐世家，2002年鼓浪屿被中国音乐家协会命名为 “音乐之岛”。 有国内仅有、国际一流的钢琴博物馆，常年举办鼓浪屿钢琴节暨全国青少年钢琴比赛、美国音乐周等重大音乐活动。</p>
+								</div>
+							</div>
+						</div>
+						<div class="tab-panel" id="jqzn-lysj">
+							<div class="panel">
+								<div class="panel-head">
+									鼓浪屿旅游时间
+								</div>
+								<div class="panel-body">
+								    <h4>旅游季节</h4>
+								    <p>鼓浪屿最佳旅游时间：四季皆宜。</p>
+								    <p>除了8 月份台风季节，海边的船只全部停开，不能欣赏到优美的海景，其他时间去厦门旅游都很好。</p>
+								    
+								</div>
+							</div>
+						</div>
+						<div class="tab-panel" id="jqzn-hbbz">
+							<div class="panel">
+								<div class="panel-head">
+									鼓浪屿货币帮助
+								</div>
+								<div class="panel-body">
+								    <h4>货币及兑换</h4>
+								    <p>鼓浪屿轮渡码头出来的龙头路上就有中国银行、建行、工商可取钱，所以无需带太多现金的，准备好一张银联卡即可。</p>
+								</div>
+							</div>
+						</div>
+						<div class="tab-panel" id="jqzn-yzyp">
+							<div class="panel">
+								<div class="panel-head">
+									鼓浪屿衣着用品
+								</div>
+								<div class="panel-body">
+								    <h4>其他日常用品</h4>
+								    <p>旅行装备、防晒霜、伞、太阳镜、胃药、清凉油等</p>
+								</div>
+							</div>
+						</div>
+						<div class="tab-panel" id="jqzn-cxxz">
+							<div class="panel">
+								<div class="panel-head">
+									鼓浪屿出行须知
+								</div>
+								<div class="panel-body">
+								    <h4>重要电话</h4>
+								    <p>鼓浪屿游客中心：0592-2060777;0592-2061777</p>
+								    <p>厦门轮渡公司电话：0592-2023493</p>
+								    <h4>特别提示</h4>
+								    <p>1、 在鼓浪屿，建议步行，慢慢游览各个景点，才能真正感受到“花园城市”的魅力。</p>
+								    <p>2、 鼓浪屿上有很多龙头路、漳州路，所以千万要动嘴巴去问岛上的人，否则会走很多冤枉路。</p>
+								    <p>3、 在鼓浪屿看到朋友推荐的卖特产的店时，千万别一时兴奋而忘了后面还有很多景点，负重旅行可不是我们想要的。或者
+  可以先寄放在店家那里，走完所有景点之后再回去取。</p>
+								    <p>4、 到海边礁石上玩，一定要注意潮水涨落，要在潮涨前上岸，安全第一。</p>
+								    <p>5、 初次去鼓浪屿建议花一元钱登上渡船的二楼，观赏厦门海景。</p>
+								    <p>6、 鼓浪屿的公共场所是禁止吸烟的，违反的可能会受到惩罚。</p>
+								    <p>7、 在鼓浪屿乱丢垃圾、破坏市容整洁的，会依据情节轻重受到处罚。</p>
+								    <p>8、 鼓浪屿有很多无证导游、无证照相，请拒绝无证导游，游玩时记得和导游签订“一日游行程订单”，此举将保证您享受更加规范的导游服务。</p>
+								    <p>9、 鼓浪屿上的台湾烟酒，干货都不要买。基本是假的和随便开价的。</p>
+								    <p>10、鼓浪屿上的小店、旅馆等一般都有WiFi，十分方便。</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!--fy-comments-->
+			</div>
+            <!-- 景区交通 -->
+			<div class="js-tab-panel yun-jqzn-panel">
+				<div class="tab tab-landscape clearfix">
+					<div class="tab-head">
+						<ul class="tab-nav clearfix">
+							<li class="active"><a href="#jqzn-qb">全部</a> </li>
+							<li><a href="#jqzn-snjt">市内交通</a> </li>
+							<li><a href="#jqzn-qt">其它</a> </li>
+						</ul>
+					</div>
+					<div class="tab-body jqzn-panel">
+					    <div class="tab-panel active" id="jqzn-qb">
+							<div class="panel">
+								<div class="panel-head">
+									鼓浪屿交通
+								</div>
+								<div class="panel-body">
+								    <h4>市内交通</h4>
+								    <p><strong>观光车</strong></p>
+								    <p>想要领略全岛风光，可以乘坐电瓶车绕岛一周。电瓶车按照站点收费，具体分为20-50元不等。行驶路线为：环鼓路——轮渡广场——延平路——兆和路——鼓声路——港后路——中华路——漳州路——鹿礁路——轮渡广场。</p>
+								    <p>运营时间：8:00-18:00。</p>
+								    <div class="mt30" style="font-size:12px;color:#FFB158">
+									    <p>小贴士：</p>
+									    <p>除此之外岛内游玩全是步行。建议不要乘坐观光车，因为会错过很多景点。而且要真正体验到鼓浪屿特别之处，都是要以步行为主的。</p>
+								    </div>
+								    <h4>其它</h4>
+								    <p>鼓浪屿位于厦门岛西南隅，与厦门市隔海相望，只隔一条宽600米的鹭江。游客可以先乘坐飞机、火车或是汽车到达厦门，然后换乘公交或是出租车到达轮渡码头，再乘轮渡就能到达鼓浪屿。</p>
+								    <p class="mt30">厦门至鼓浪屿的游客航线：</p>
+								    <p>轮渡是游客穿越鹭江抵达鼓浪屿的主要交通工具。乘客需在厦门站买好往返船票，根据目的地码头不同，票价不同，常规的航线是厦门邮轮中心厦鼓码头-三丘田码头，票价为35元。前往和返程时都需要交验船票方可乘船。</p>
+								    <p class="mt30">航线1：厦门邮轮中心厦鼓码头-三丘田码头</p>
+								    <p>厦门站：每天7:10-18:30（夏季），7:10-17:30（冬季），每20分钟左右一班。</p>
+                                    <p>鼓浪屿站：每天7:20-18:40（夏季），7:20-17:40（冬季），每20分钟左右一班。</p>  
+                                    <p>票价（往返）35元。</p>
+                                    <p class="mt30">航线2：厦门邮轮中心厦鼓码头-内厝澳码头</p>
+                                    <p>厦门站：每天7:10-18:30（夏季），7:10-17:30（冬季），每20分钟左右一班。</p>
+                                    <p>鼓浪屿站：每天7:20-18:40（夏季），7:20-17:40（冬季），每20分钟左右一班。</p>
+                                    <p>普通游船票价（往返）35元，豪华游船票价（往返）50元。</p>
+								    <p class="mt30">航线3：海沧嵩屿码头-内厝澳码头</p>
+								    <p>厦门站：每天7:30-18:50（夏季），7:10-17:50（冬季），每20-40分钟左右一班。</p>
+								    <p>鼓浪屿站：每天7:20-18:20（夏季），7:20-17:20（冬季），每20-40分钟左右一班。</p>
+								    <p>票价（往返）30元。</p>
+								    <p class="mt30">航线4：厦门第一码头-海沧嵩屿码头</p>
+								    <p>厦门站：每天7:30-18:30（夏季），7:10-17:30（冬季），每60分钟左右一班</p>
+								    <p>鼓浪屿站: 每天7:10-18:10（夏季），7:10-17:10（冬季），每60分钟左右一班。</p>
+								    <p>票价（单程）2元。</p>
+								    <p class="mt30">航线5（夜间航线）：厦门轮渡码头2号厅-三丘田码头</p>
+								    <p>厦门站：每天18:50-次日6:30（夏季），17:50-次日6:30（冬季），每20-60分钟左右一班。</p>
+								    <p>鼓浪屿站: 每天19:00-次日7:00（夏季），18:00-次日7:00（冬季），每20-60分钟左右一班。</p>
+								    <p>票价（往返）35元。</p>
+								    <p class="mt30">市民专线航线</p>
+								    <p>自2014年10月20日起，开辟了市民专线的航线，钢琴码头作为市民专线的码头。</p>
+								    <p>航线1：厦门轮渡码头1号厅-钢琴码头</p>
+								    <p>航线2：厦门第一码头-内厝澳码头</p>
+								    <p>航线3（通宵航线）：厦门轮渡码头1号厅-钢琴码头</p>
+								    <p class="text-red mt30">注：</p>
+								    <p>1.夏令时间从6月1日至9月30日，冬令时间从10月1日至次年5月31日。</p>
+								    <p>2.轮渡航班具体时间表与价格可查官网：http://www.xmferry.com/</p>
+								    <div class="mt30" style="font-size:12px;color:#FFB158">
+									    <p>小贴士：</p>
+									    <p>1.节假日或特殊情况不定时开航，咨询电话：0592-2023493</p>
+									    <p>2.在厦门码头购票后过渡，请保留好船票，从鼓浪屿返回厦门时将船票投入回收口后过渡。</p>
+								    </div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-panel" id="jqzn-snjt">
+							<div class="panel">
+								<div class="panel-head">
+									市内交通
+								</div>
+								<div class="panel-body">
+								    <p><strong>观光车</strong></p>
+								    <p>想要领略全岛风光，可以乘坐电瓶车绕岛一周。电瓶车按照站点收费，具体分为20-50元不等。行驶路线为：环鼓路——轮渡广场——延平路——兆和路——鼓声路——港后路——中华路——漳州路——鹿礁路——轮渡广场。</p>
+								    <p>运营时间：8:00-18:00。</p>
+								    <div class="mt30" style="font-size:12px;color:#FFB158">
+									    <p>小贴士：</p>
+									    <p>除此之外岛内游玩全是步行。建议不要乘坐观光车，因为会错过很多景点。而且要真正体验到鼓浪屿特别之处，都是要以步行为主的。</p>
+								    </div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-panel" id="jqzn-qt">
+							<div class="panel">
+								<div class="panel-head">
+									其它
+								</div>
+								<div class="panel-body">
+								    <p>鼓浪屿位于厦门岛西南隅，与厦门市隔海相望，只隔一条宽600米的鹭江。游客可以先乘坐飞机、火车或是汽车到达厦门，然后换乘公交或是出租车到达轮渡码头，再乘轮渡就能到达鼓浪屿。</p>
+								    <p class="mt30">厦门至鼓浪屿的游客航线：</p>
+								    <p>轮渡是游客穿越鹭江抵达鼓浪屿的主要交通工具。乘客需在厦门站买好往返船票，根据目的地码头不同，票价不同，常规的航线是厦门邮轮中心厦鼓码头-三丘田码头，票价为35元。前往和返程时都需要交验船票方可乘船。</p>
+								    <p class="mt30">航线1：厦门邮轮中心厦鼓码头-三丘田码头</p>
+								    <p>厦门站：每天7:10-18:30（夏季），7:10-17:30（冬季），每20分钟左右一班。</p>
+                                    <p>鼓浪屿站：每天7:20-18:40（夏季），7:20-17:40（冬季），每20分钟左右一班。</p>  
+                                    <p>票价（往返）35元。</p>
+                                    <p class="mt30">航线2：厦门邮轮中心厦鼓码头-内厝澳码头</p>
+                                    <p>厦门站：每天7:10-18:30（夏季），7:10-17:30（冬季），每20分钟左右一班。</p>
+                                    <p>鼓浪屿站：每天7:20-18:40（夏季），7:20-17:40（冬季），每20分钟左右一班。</p>
+                                    <p>普通游船票价（往返）35元，豪华游船票价（往返）50元。</p>
+								    <p class="mt30">航线3：海沧嵩屿码头-内厝澳码头</p>
+								    <p>厦门站：每天7:30-18:50（夏季），7:10-17:50（冬季），每20-40分钟左右一班。</p>
+								    <p>鼓浪屿站：每天7:20-18:20（夏季），7:20-17:20（冬季），每20-40分钟左右一班。</p>
+								    <p>票价（往返）30元。</p>
+								    <p class="mt30">航线4：厦门第一码头-海沧嵩屿码头</p>
+								    <p>厦门站：每天7:30-18:30（夏季），7:10-17:30（冬季），每60分钟左右一班</p>
+								    <p>鼓浪屿站: 每天7:10-18:10（夏季），7:10-17:10（冬季），每60分钟左右一班。</p>
+								    <p>票价（单程）2元。</p>
+								    <p class="mt30">航线5（夜间航线）：厦门轮渡码头2号厅-三丘田码头</p>
+								    <p>厦门站：每天18:50-次日6:30（夏季），17:50-次日6:30（冬季），每20-60分钟左右一班。</p>
+								    <p>鼓浪屿站: 每天19:00-次日7:00（夏季），18:00-次日7:00（冬季），每20-60分钟左右一班。</p>
+								    <p>票价（往返）35元。</p>
+								    <p class="mt30">市民专线航线</p>
+								    <p>自2014年10月20日起，开辟了市民专线的航线，钢琴码头作为市民专线的码头。</p>
+								    <p>航线1：厦门轮渡码头1号厅-钢琴码头</p>
+								    <p>航线2：厦门第一码头-内厝澳码头</p>
+								    <p>航线3（通宵航线）：厦门轮渡码头1号厅-钢琴码头</p>
+								    <p class="text-red mt30">注：</p>
+								    <p>1.夏令时间从6月1日至9月30日，冬令时间从10月1日至次年5月31日。</p>
+								    <p>2.轮渡航班具体时间表与价格可查官网：http://www.xmferry.com/</p>
+								    <div class="mt30" style="font-size:12px;color:#FFB158">
+									    <p>小贴士：</p>
+									    <p>1.节假日或特殊情况不定时开航，咨询电话：0592-2023493</p>
+									    <p>2.在厦门码头购票后过渡，请保留好船票，从鼓浪屿返回厦门时将船票投入回收口后过渡。</p>
+								    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 景区景点 -->
+			<div class="js-tab-panel">
+				<div class="yun-linecenter-tit"><strong>鼓浪屿鼓浪屿</strong></div>
+				<p>鼓浪屿是一个令很多人都向往的地方，这里的万国建筑，游弋在琴声悠扬的海滩，或为探寻古老院落的边边角角，或只为单独的去寻找某只猫或狗，或只为拿着一本盖章本到各个小特色店盖章…… 有人说鼓浪屿是情侣的浪漫甜蜜之所，也是喵星人的秘密基地，更是文艺小清新的聚集地。</p>
+                <div class="yun-search-list mt30">
+					<ul class="clearfix">
+					    <li>
+					        <div class="tit">区域</div>
+                            <div class="box">
+						     	<a class="active" href="#">全部</a>
+						     	<a href="">建筑人文</a>
+						     	<a href="">场馆院所</a>
+						     	<a href="">自然景观</a>
+						     	<a href="">公园乐园</a>
+						     	<a href="">历史遗迹</a>
+						     	<a href="">宗教场所</a>
+						     	<a href="">生活休闲</a>
+						     	<a href="">夜生活</a>
+						     	<a href="">表演赛事</a>
+						     	<a href="">民风民俗</a>
+					     	</div>
+					    </li>
+					    <li>
+					        <div class="tit">状态</div>
+					        <div class="box">
+						        <a class="active"  href="#">全部</a>
+						     	<a href="">免费</a>
+						     	<a href="">收费</a>
+					     	</div>
+					    </li>
+					    <li class="last">为你找到 <strong>349</strong> 家景点</li>
+					</ul>
+				</div>
+				<div class="yun-list-dl-inline mt30 clearfix">
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="price-line"><span>AAAAAA级风景区</span>市场价：<del>￥152</del>易房云卡价：<strong>￥88</strong></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="score star-r clearfix">
+				    			     <strong>5.0分</strong>
+				    			     <div class="star s5"></div>
+				    			     <p>来自<span class="text-yellow">296</span>条评价</p>
+				    			</div>
+
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="price-line"><span>AAAAAA级风景区</span>市场价：<del>￥152</del>易房云卡价：<strong>￥88</strong></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="score star-r clearfix">
+				    			     <strong>5.0分</strong>
+				    			     <div class="star s5"></div>
+				    			     <p>来自<span class="text-yellow">296</span>条评价</p>
+				    			</div>
+
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="price-line"><span>AAAAAA级风景区</span>市场价：<del>￥152</del>易房云卡价：<strong>￥88</strong></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="score star-r clearfix">
+				    			     <strong>5.0分</strong>
+				    			     <div class="star s5"></div>
+				    			     <p>来自<span class="text-yellow">296</span>条评价</p>
+				    			</div>
+
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="price-line"><span>AAAAAA级风景区</span>市场价：<del>￥152</del>易房云卡价：<strong>￥88</strong></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="score star-r clearfix">
+				    			     <strong>5.0分</strong>
+				    			     <div class="star s5"></div>
+				    			     <p>来自<span class="text-yellow">296</span>条评价</p>
+				    			</div>
+
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="price-line"><span>AAAAAA级风景区</span>市场价：<del>￥152</del>易房云卡价：<strong>￥88</strong></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="score star-r clearfix">
+				    			     <strong>5.0分</strong>
+				    			     <div class="star s5"></div>
+				    			     <p>来自<span class="text-yellow">296</span>条评价</p>
+				    			</div>
+
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="price-line"><span>AAAAAA级风景区</span>市场价：<del>￥152</del>易房云卡价：<strong>￥88</strong></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="score star-r clearfix">
+				    			     <strong>5.0分</strong>
+				    			     <div class="star s5"></div>
+				    			     <p>来自<span class="text-yellow">296</span>条评价</p>
+				    			</div>
+
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <ul class="pagination border-green mt30">
+					    <li><a href="#">上一页</a> </li>
+					    <li class="active"><a href="#">1</a> </li>
+					    <li><a href="#">2</a> </li>
+					    <li><a href="#">3</a> </li>
+					    <li><a href="#">4</a> </li>
+					    <li><a href="#">5</a> </li>
+					    <li><a href="#">下一页</a> </li>
+					</ul>
+                </div>
+			</div>
+			<!-- 景区住宿 -->
+			<div class="js-tab-panel">
+				<div class="yun-linecenter-tit"><strong>鼓浪屿鼓浪屿</strong></div>
+				<p>鼓浪屿是一个令很多人都向往的地方，这里的万国建筑，游弋在琴声悠扬的海滩，或为探寻古老院落的边边角角，或只为单独的去寻找某只猫或狗，或只为拿着一本盖章本到各个小特色店盖章…… 有人说鼓浪屿是情侣的浪漫甜蜜之所，也是喵星人的秘密基地，更是文艺小清新的聚集地。</p>
+				<div class="yun-form form-inline-group clearfix">
+                    <label>入住</label><input class="form-time" type="text" name="fromdate"  value="2016-10-13" size="10">
+                    <label>离店</label><input class="form-time" type="text" name="fromdate"  value="2016-10-13" size="10">
+                    <label style="">关键词</label><input style="width:250px;" type="text" placeholder="酒店名" >
+                	<button class="button bg-yellow">搜索</button>
+                </div>
+				<div class="yun-search-list mt10">
+					<ul class="clearfix">
+					    <li>
+					        <div class="tit">区域</div>
+                            <div class="box">
+						     	<a class="active" href="#">全部</a>
+						     	<a href="">历史建筑</a>
+						     	<a href="">码头区</a>
+						     	<a href="">临海区</a>
+						     	<a href="">半山区</a>
+	
+					     	</div>
+					    </li>
+					    <li>
+					        <div class="tit">价格</div>
+					        <div class="box">
+						        <a class="active"  href="#">不限</a>
+						     	<a href="">150以下</a>
+						     	<a href="">150-300元</a>
+						     	<a href="">301-600元</a>
+						     	<a href="">600-1000元</a>
+						     	<a href="">1000元以上</a>
+					     	</div>
+					    </li>
+					    <li>
+					        <div class="tit">设施</div>
+					        <div class="box">
+						        <a class="active"  href="#">不限</a>
+						     	<a href="">免费上网</a>
+						     	<a href="">免费停车</a>
+						     	<a href="">餐厅</a>
+						     	<a href="">商务中心</a>
+						     	<a href="">键身房</a>
+						     	<a href="">SPA</a>
+						     	<a href="">叫车服务</a>
+					     	</div>
+					    </li>
+					    <li class="last">为你找到 <strong>349</strong> 家鼓浪屿酒店</li>
+					</ul>
+					
+				</div>
+				<div class="yun-list-dl-inline mt30 clearfix">
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="score clearfix"><strong>3.2分</strong><div class="star s3_5">来自<span class="yellow">296</span>条评价</div></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="price">
+				    				<strong>￥2000<span>起</span></strong>
+				    				<a class="button button-small bg-yellow" href="#">预定</a>
+				    			</div>
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="score clearfix"><strong>3.2分</strong><div class="star s3_5">来自<span class="yellow">296</span>条评价</div></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="price">
+				    				<strong>￥2000<span>起</span></strong>
+				    				<a class="button button-small bg-yellow" href="#">预定</a>
+				    			</div>
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="score clearfix"><strong>3.2分</strong><div class="star s3_5">来自<span class="yellow">296</span>条评价</div></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="price">
+				    				<strong>￥2000<span>起</span></strong>
+				    				<a class="button button-small bg-yellow" href="#">预定</a>
+				    			</div>
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="score clearfix"><strong>3.2分</strong><div class="star s3_5">来自<span class="yellow">296</span>条评价</div></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="price">
+				    				<strong>￥2000<span>起</span></strong>
+				    				<a class="button button-small bg-yellow" href="#">预定</a>
+				    			</div>
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="score clearfix"><strong>3.2分</strong><div class="star s3_5">来自<span class="yellow">296</span>条评价</div></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="price">
+				    				<strong>￥2000<span>起</span></strong>
+				    				<a class="button button-small bg-yellow" href="#">预定</a>
+				    			</div>
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <ul class="pagination border-green mt30">
+					    <li><a href="#">上一页</a> </li>
+					    <li class="active"><a href="#">1</a> </li>
+					    <li><a href="#">2</a> </li>
+					    <li><a href="#">3</a> </li>
+					    <li><a href="#">4</a> </li>
+					    <li><a href="#">5</a> </li>
+					    <li><a href="#">下一页</a> </li>
+					</ul>
+				</div>
+			</div>
+			<!-- 景区美食 -->
+			<div class="js-tab-panel">
+				<div class="yun-linecenter-tit"><strong>鼓浪屿鼓浪屿</strong></div>
+				<p>鼓浪屿是一个令很多人都向往的地方，这里的万国建筑，游弋在琴声悠扬的海滩，或为探寻古老院落的边边角角，或只为单独的去寻找某只猫或狗，或只为拿着一本盖章本到各个小特色店盖章…… 有人说鼓浪屿是情侣的浪漫甜蜜之所，也是喵星人的秘密基地，更是文艺小清新的聚集地。</p>
+				<div class="yun-list-dl-inline mt30 clearfix">
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    		<a href="" class="tit">鼓浪屿住宿</a>
+				    		<p>浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东简介</p>
+				    		<a href="" class="map">查看地图</a>
+				    		<div class="eat">那里吃：<a href="#">菩提书坊</a><a href="#">菩提书坊</a><a href="#">菩提书坊</a></div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    		<a href="" class="tit">鼓浪屿住宿</a>
+				    		<p>浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东简介</p>
+				    		<a href="" class="map">查看地图</a>
+				    		<div class="eat">那里吃：<a href="#">菩提书坊</a><a href="#">菩提书坊</a><a href="#">菩提书坊</a></div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    		<a href="" class="tit">鼓浪屿住宿</a>
+				    		<p>浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东简介</p>
+				    		<a href="" class="map">查看地图</a>
+				    		<div class="eat">那里吃：<a href="#">菩提书坊</a><a href="#">菩提书坊</a><a href="#">菩提书坊</a></div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    		<a href="" class="tit">鼓浪屿住宿</a>
+				    		<p>浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东简介</p>
+				    		<a href="" class="map">查看地图</a>
+				    		<div class="eat">那里吃：<a href="#">菩提书坊</a><a href="#">菩提书坊</a><a href="#">菩提书坊</a></div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    		<a href="" class="tit">鼓浪屿住宿</a>
+				    		<p>浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东简介</p>
+				    		<a href="" class="map">查看地图</a>
+				    		<div class="eat">那里吃：<a href="#">菩提书坊</a><a href="#">菩提书坊</a><a href="#">菩提书坊</a></div>
+				    	</dd>
+				    </dl>
+				    <ul class="pagination border-green mt30">
+					    <li><a href="#">上一页</a> </li>
+					    <li class="active"><a href="#">1</a> </li>
+					    <li><a href="#">2</a> </li>
+					    <li><a href="#">3</a> </li>
+					    <li><a href="#">4</a> </li>
+					    <li><a href="#">5</a> </li>
+					    <li><a href="#">下一页</a> </li>
+					</ul>
+				</div>
+			</div>
+			<!-- 景区购物 -->
+			<div class="js-tab-panel">
+				<div class="yun-linecenter-tit"><strong>鼓浪屿鼓浪屿</strong></div>
+				<p>鼓浪屿是一个令很多人都向往的地方，这里的万国建筑，游弋在琴声悠扬的海滩，或为探寻古老院落的边边角角，或只为单独的去寻找某只猫或狗，或只为拿着一本盖章本到各个小特色店盖章…… 有人说鼓浪屿是情侣的浪漫甜蜜之所，也是喵星人的秘密基地，更是文艺小清新的聚集地。</p>
+				<div class="yun-search-list mt30">
+					<ul class="clearfix">
+					    <li>
+                            <div class="box">
+						     	<a class="active" href="#">全部</a>
+						     	<a href="">当地特产</a>
+						     	<a href="">购物中心</a>
+						     	<a href="">超市</a>
+						     	<a href="">工艺礼品</a>
+						     	<a href="">其它</a>
+					     	</div>
+					    </li>
+					    <li class="last">为你找到 <strong>349</strong> 家店</li>
+					</ul>
+				</div>
+				<div class="yun-list-dl-inline mt30 clearfix">
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    		<a href="" class="tit">鼓浪屿住宿</a>
+				    		<p>浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新简介</p>
+				    		<div class="line"></div>
+				    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+				    		<a href="" class="map">查看地图</a>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    		<a href="" class="tit">鼓浪屿住宿</a>
+				    		<p>浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新简介</p>
+				    		<div class="line"></div>
+				    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+				    		<a href="" class="map">查看地图</a>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    		<a href="" class="tit">鼓浪屿住宿</a>
+				    		<p>浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新简介</p>
+				    		<div class="line"></div>
+				    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+				    		<a href="" class="map">查看地图</a>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    		<a href="" class="tit">鼓浪屿住宿</a>
+				    		<p>浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新简介</p>
+				    		<div class="line"></div>
+				    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+				    		<a href="" class="map">查看地图</a>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    		<a href="" class="tit">鼓浪屿住宿</a>
+				    		<p>浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新区浦东新简介</p>
+				    		<div class="line"></div>
+				    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+				    		<a href="" class="map">查看地图</a>
+				    	</dd>
+				    </dl>
+				    <ul class="pagination border-green mt30">
+					    <li><a href="#">上一页</a> </li>
+					    <li class="active"><a href="#">1</a> </li>
+					    <li><a href="#">2</a> </li>
+					    <li><a href="#">3</a> </li>
+					    <li><a href="#">4</a> </li>
+					    <li><a href="#">5</a> </li>
+					    <li><a href="#">下一页</a> </li>
+					</ul>
+				</div>
+			</div>
+			<!-- 景区玩乐 -->
+			<div class="js-tab-panel">
+				<div class="yun-linecenter-tit"><strong>鼓浪屿鼓浪屿</strong></div>
+				<p>鼓浪屿是一个令很多人都向往的地方，这里的万国建筑，游弋在琴声悠扬的海滩，或为探寻古老院落的边边角角，或只为单独的去寻找某只猫或狗，或只为拿着一本盖章本到各个小特色店盖章…… 有人说鼓浪屿是情侣的浪漫甜蜜之所，也是喵星人的秘密基地，更是文艺小清新的聚集地。</p>
+				<div class="yun-search-list mt30">
+					<ul class="clearfix">
+					    <li>
+                            <div class="box">
+						     	<a class="active" href="#">全部</a>
+						     	<a href="">建筑人文</a>
+						     	<a href="">场馆院所</a>
+						     	<a href="">自然景观</a>
+						     	<a href="">公园乐园</a>
+						     	<a href="">历史遗迹</a>
+						     	<a href="">宗教场所</a>
+						     	<a href="">生活休闲</a>
+						     	<a href="">夜生活</a>
+						     	<a href="">表演赛事</a>
+					     	</div>
+					    </li>
+					    <li>
+					        <div class="box">
+						        <a class="active"  href="#">全部</a>
+						     	<a href="">免费</a>
+						     	<a href="">收费</a>
+					     	</div>
+					    </li>
+					    <li class="last">为你找到 <strong>349</strong> 家景点</li>
+					</ul>
+				</div>
+				<div class="yun-list-dl-inline mt30 clearfix">
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="price-line">市场价：<del>￥152</del>易房云卡价：<strong>￥88</strong></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="score star-r clearfix">
+				    			     <strong>5.0分</strong>
+				    			     <div class="star s5"></div>
+				    			     <p>来自<span class="text-yellow">296</span>条评价</p>
+				    			</div>
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="price-line">市场价：<del>￥152</del>易房云卡价：<strong>￥88</strong></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="score star-r clearfix">
+				    			     <strong>5.0分</strong>
+				    			     <div class="star s5"></div>
+				    			     <p>来自<span class="text-yellow">296</span>条评价</p>
+				    			</div>
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="price-line">市场价：<del>￥152</del>易房云卡价：<strong>￥88</strong></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="score star-r clearfix">
+				    			     <strong>5.0分</strong>
+				    			     <div class="star s5"></div>
+				    			     <p>来自<span class="text-yellow">296</span>条评价</p>
+				    			</div>
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="price-line">市场价：<del>￥152</del>易房云卡价：<strong>￥88</strong></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="score star-r clearfix">
+				    			     <strong>5.0分</strong>
+				    			     <div class="star s5"></div>
+				    			     <p>来自<span class="text-yellow">296</span>条评价</p>
+				    			</div>
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <dl>
+				    	<dt><a href=""><img src="../images/ad/280x190.jpg" alt=""></a></dt>
+				    	<dd>
+				    	    <div class="fl">
+					    		<a href="" class="tit">鼓浪屿住宿</a>
+					    		<p>浦东新区华洲路130号，近海滨路。 【浦东机场核心区】</p>
+					    		<a href="" class="map">查看地图</a>
+					    		<div class="price-line">市场价：<del>￥152</del>易房云卡价：<strong>￥88</strong></div>
+				    		</div>
+				    		<div class="fr">
+				    			<div class="score star-r clearfix">
+				    			     <strong>5.0分</strong>
+				    			     <div class="star s5"></div>
+				    			     <p>来自<span class="text-yellow">296</span>条评价</p>
+				    			</div>
+				    		</div>
+				    		<div class="clearfix"></div>
+				    		<div class="review"><span>gaei14752</span>点评：去圣淘沙好方便啊！做地铁一站地到harbour front,大概这个名字，记......</div>
+				    	</dd>
+				    </dl>
+				    <ul class="pagination border-green mt30">
+					    <li><a href="#">上一页</a> </li>
+					    <li class="active"><a href="#">1</a> </li>
+					    <li><a href="#">2</a> </li>
+					    <li><a href="#">3</a> </li>
+					    <li><a href="#">4</a> </li>
+					    <li><a href="#">5</a> </li>
+					    <li><a href="#">下一页</a> </li>
+					</ul>
+				</div>
+				<!--end-->
+			</div>
+		</div>
+	</div>
+ 
+		
+</div>
+
+
+<div class="yun-footer margin-large-top" style="background:#F2F2F2">
+    <div class="ycontainer">
+		<div class="line">
+			<div class="x8">
+				<div class="foot-nav clearfix">
+					<a href="">关于我们</a>
+					<a href="">联系我们</a>
+					<a href="">产品与服务</a>
+					<a href="">服务条款</a>
+					<a href="">网站地图</a>
+					<a href="">意见反馈</a>
+				</div>
+				<p>版权所有 © 2016-2017　 易房云平台-http://www.yun.com 　　网站常年法律顾问：吴劲松律师</p>
+				<p><b>粤ICP备14011867号-1</b>技术支持:深圳市易建房科技有限公司</p>
+			</div>
+			<div class="x4">
+				<dl class="box-r">
+	                <dt><img width="88" src="../images/er.jpg" alt="集装箱活动房"></dt>
+	                <dd>
+	                  <h4>微信扫一扫</h4>
+	                  <p>扫描二维码，即刻与小易亲密互动，还有劲爆惊喜等你来！</p>
+	                </dd>
+	            </dl>
+			</div>
+		</div>
+		<img class="safe" src="../images/safe.png" alt="">
+	</div>
+</div>
+
+
+
+</body>
+</html>

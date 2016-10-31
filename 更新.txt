@@ -1,0 +1,11 @@
+v2.0 (2016.10.26）
+1.更新酒店详情页（hotel-show.html）
+2.新增新闻首页（news-index.html）,新闻列表（news-list.html）,新闻详情（news-show.html）
+
+
+v1.0 (2016.10.22）
+1。房源系列完成
+2。会员首页（index.html）,个人会员首页完成（buy-member-index.html）
+
+
+

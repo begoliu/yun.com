@@ -1,0 +1,29 @@
+/*相关样式*/
+#showbox { background:#eee;}
+#showbox span { background:url(../images/whitebg.png) repeat;}
+#showsum { left:20px;margin-top:25px;height:60px!important;overflow:hidden;}
+#showsum span { border:1px solid #ddd;height:60px!important;}
+#showsum span.sel { border:1px solid #4EA82D;}
+#showsum span img{
+	top:0!important;
+	width:90px!important;
+	height:60px!important;
+}
+.showpage { width:450px; position:relative;}
+.showpage a { 
+	display:block; 
+	width:15px; 
+	border:1px solid #ddd; 
+	height:60px; 
+	line-height:60px; 
+	background:#eee; 
+	text-align:center; 
+	font-size:18px; 
+	position:absolute; 
+	left:0; 
+	top:-62px; 
+	text-decoration:none; 
+	color:#999;
+}
+.showpage a#shownext { left:auto; right:0;}
+.showpage a:hover { background:#ccc; color:#777;}

@@ -1,0 +1,9 @@
+一。房源系列：房源列表（fy-list.html） ---->房源详情（fy-show.html） ---->景区景点（jingqu-show.html）,住宿（hotel-show.html），美食（eat-show.html） 
+
+
+二。新闻系列：新闻中心（news-index.html）---->新闻列表（news-list.html）---->新闻详情（news-show.html）
+三。会员首页（index.html）--->商家会员首页（sell-member-index.html），个人会员首页（buy-member-index.html）
+
+四。
+
+

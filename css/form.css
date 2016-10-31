@@ -1,0 +1,47 @@
+.yun-form{
+	background:#F2F2F2;
+	padding:20px;
+	border-bottom:2px solid #DDD;
+	padding-bottom:18px;
+}
+.yun-form select{
+	width:150px;
+	padding:0 15px;
+	border:1px solid #EEE;
+	border-radius:5px;
+	height:32px;
+	line-height:32px;
+}
+.yun-form input[type="text"]{
+	width:200px;
+	border:1px solid #EEE;
+	padding:0 12px;
+	height:32px;
+	line-height:32px;
+	border-radius:5px;
+	/*color:#999;*/
+}
+.yun-form .form-time{
+	position: relative;
+	z-index: 1;
+	padding-right:42px;
+	background:#FFF url("../images/icon.png") no-repeat 170px -295px;
+
+}
+
+.yun-form label{
+	height:32px;
+	line-height:32px;
+}
+
+
+.form-inline-group > *{
+	float:left;
+}
+.form-inline-group > *{
+	margin-left:15px;
+}
+.form-inline-group > *:first-child{
+	margin-left:0;
+}
+

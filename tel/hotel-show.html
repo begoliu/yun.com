@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>房源列表</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/yun.js"></script>
+    <link rel="stylesheet" href="../pintu/pintu.css">
+    <link rel="stylesheet" href="../css/yun.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <script src="../pintu/pintu.js"></script>
+    <script src="../pintu/respond.js"></script>
+    
+</head>
+<body>
+
+<div class="yun-min-top clearfix">
+    <div class="ycontainer">
+		<!-- <div class="b-l">
+			你好！<a href="#"><strong>张三</strong></a><span>|</span><a href="#">退出</a><span>|</span><a href="#">消息</a>
+		</div> -->
+		<div class="b-l">
+			<a href="#"><strong>登录</strong></a><a href="#"><strong style="color:#FF7E00;margin-left:15px;">注册</strong></a>
+		</div>
+		<div class="b-r">
+            <a href="">网站首页</a><span>|</span><a href="">商家中心</a><span>|</span><a href="">会员中心</a><span>|</span><a href="">联系客服</a>
+		</div>
+	</div>
+</div>
+<div class="yun-top">
+    <div class="ycontainer">
+	    <div class="line line-big ">
+	   		<div class="x4 logo"><a href="#"><img src="../images/logo.png"></a></div>
+		    <div class="x8">
+			    <ul class="nav nav-menu nav-inline nav-right nav-navicon">
+					<li><a href="#">首页</a> </li>
+					<li><a href="#">房源列表</a> </li>
+					<li><a href="#">招商加盟</a> </li>
+					<li class="active"><a href="#">新闻中心</a> </li>
+					<li><a href="#">关于我们</a> </li>
+				</ul>
+			</div>
+	    </div>
+	</div>
+</div>
+<div class="ycontainer clearfix">
+    <ul class="yun-breadcrumb">
+		    <li><a href="">首页</a></li>
+		    <li><a href="">我要买房</a></li>
+		    <li><span>房源列表</span></li>
+    </ul>
+    <div class="" style="padding:20px;border:1px solid #DDD;">
+        <div class="clearfix">
+	        <div class="hotel-tit"> 
+		        <h1>上海国际机场宾馆</h1>
+		        <p>长宁虹桥机场附近</p>
+		        <div class="hots clearfix">
+		        	<span class="s0"></span>
+		        	<span class="s1"></span>
+		        	<span class="s2"></span>
+		        	<span class="s3"></span>
+		        	<span class="s4"></span>
+		        	<span class="s5"></span>
+		        </div>
+		    </div>
+		    <div class="hotel-tit-price">
+		        <strong>￥256<span>起</span></strong>
+		    	<a href="" class="button bg-yellow">开始预定</a>
+		    </div>
+	    </div>
+	    <script type="text/javascript" src="../imgbox/images-grid.js"></script>
+        <link rel="stylesheet" href="../imgbox/images-grid.css">
+        <div id="gallery1"></div>
+        <script>
+	        $('#gallery1').imagesGrid({
+	            images: [
+	                '../images/ad/1.jpg',
+	                { src: '../images/diff-size/2.jpg', alt: 'Second image', title: 'Second image' },
+	                '../images/ad/3.jpg',
+	                { src: '../images/ad/2.jpg', caption: 'Beautiful forest' },
+	                '../images/ad/5.jpg'
+	            ],
+	            align: true
+	        });
+	    </script>
+	    
+    </div>
+    <div class="mt30 hotel-house">
+    	<div class="yun-form form-inline-group clearfix">
+            <label>入住</label><input class="form-time" type="text" name="fromdate"  value="2016-10-13" size="10">
+            <label>离店</label><input class="form-time" type="text" name="fromdate"  value="2016-10-13" size="10">
+
+            <!-- <label style="">关键词</label><input style="width:250px;" type="text" placeholder="酒店名" > -->
+        	<button class="button bg-yellow">搜索</button>
+        	<div class="yun-search-list" style="">
+				<ul class="clearfix">
+				    <li>
+
+                        <div class="box" >
+					     	<a class="active" href="#">可预付</a>
+					     	<a href="">立即确认</a>
+					     	<a href="">含早餐</a>
+					     	<a href="">钟点房</a>
+					     	<a href="">免费取消</a>
+				     	</div>
+				    </li>
+				</ul>
+			</div>
+        </div>
+        <div class="hotel-table">
+        	<table cellpadding="0" cellspacing="0" width="100%" border="0">
+        	    <tr>
+        	        <th width="20%">&nbsp;</th>
+        	    	<th width="32%">房型</th>
+        	    	<th width="6%">床型</th>
+        	    	<th width="6%">早餐</th>
+        	    	<th width="8%">宽带</th>
+        	    	<th width="8%">取消政策</th>
+        	    	<th width="25%">易房云价</th>
+        	    </tr>
+        	    <tr class="border-top-none">
+
+        	        <td class="img-tit" rowspan="4">
+        	            <img style="" src="../images/ad/house.jpg">
+        	            <div class="tit">标准双人间</div>
+        	            <p>舒适、干净</p>
+
+        	        </td>
+        	    	<td>(钟点房)(9：00-18：00期间4小时连住)</td>
+        	    	<td>双床</td>
+        	    	<td>无早</td>
+        	    	<td>免费有线</td>
+        	    	<td>免费取消</td>
+        	    	<td><span class="price">¥<strong>245</strong></span><a href="" class="button bg-yellow">预定</a><a href="" class="button border-red">预付</a></td>
+        	    </tr>
+        	    <tr>
+        	    	<td>(钟点房)(9：00-18：00期间4小时连住)</td>
+        	    	<td>双床</td>
+        	    	<td>无早</td>
+        	    	<td>免费有线</td>
+        	    	<td>免费取消</td>
+        	    	<td><span class="price">¥<strong>245</strong></span><a href="" class="button bg-yellow">预定</a><a href="" class="button border-red">预付</a></td>
+        	    </tr>
+        	    <tr>
+        	    	<td>(钟点房)(9：00-18：00期间4小时连住)</td>
+        	    	<td>双床</td>
+        	    	<td>无早</td>
+        	    	<td>免费有线</td>
+        	    	<td>免费取消</td>
+        	    	<td><span class="price">¥<strong>245</strong></span><a href="" class="button bg-yellow">预定</a><a href="" class="button border-red">预付</a></td>
+        	    </tr>
+        	    <tr>
+        	    	<td>(钟点房)(9：00-18：00期间4小时连住)</td>
+        	    	<td>双床</td>
+        	    	<td>无早</td>
+        	    	<td>免费有线</td>
+        	    	<td>免费取消</td>
+        	    	<td><span class="price">¥<strong>245</strong></span><a href="" class="button bg-yellow">预定</a><a href="" class="button border-red">预付</a></td>
+        	    </tr>
+        	</table>
+        	<table cellpadding="0" cellspacing="0" width="100%" border="0">
+        	    <tr>
+        	        <th width="20%">&nbsp;</th>
+        	    	<th width="32%">房型</th>
+        	    	<th width="6%">床型</th>
+        	    	<th width="6%">早餐</th>
+        	    	<th width="8%">宽带</th>
+        	    	<th width="8%">取消政策</th>
+        	    	<th width="25%">易房云价</th>
+        	    </tr>
+        	    <tr class="border-top-none">
+
+        	        <td class="img-tit" rowspan="4">
+        	            <img style="" src="../images/ad/house.jpg">
+        	            <div class="tit">标准单人间</div>
+        	            <p>舒适、干净</p>
+
+        	        </td>
+        	    	<td>(钟点房)(9：00-18：00期间4小时连住)</td>
+        	    	<td>双床</td>
+        	    	<td>无早</td>
+        	    	<td>免费有线</td>
+        	    	<td>免费取消</td>
+        	    	<td><span class="price">¥<strong>245</strong></span><a href="" class="button bg-yellow">预定</a><a href="" class="button border-red">预付</a></td>
+        	    </tr>
+        	    <tr>
+        	    	<td>(钟点房)(9：00-18：00期间4小时连住)</td>
+        	    	<td>双床</td>
+        	    	<td>无早</td>
+        	    	<td>免费有线</td>
+        	    	<td>免费取消</td>
+        	    	<td><span class="price">¥<strong>245</strong></span><a href="" class="button bg-yellow">预定</a><a href="" class="button border-red">预付</a></td>
+        	    </tr>
+        	    <tr>
+        	    	<td>(钟点房)(9：00-18：00期间4小时连住)</td>
+        	    	<td>双床</td>
+        	    	<td>无早</td>
+        	    	<td>免费有线</td>
+        	    	<td>免费取消</td>
+        	    	<td><span class="price">¥<strong>245</strong></span><a href="" class="button bg-yellow">预定</a><a href="" class="button border-red">预付</a></td>
+        	    </tr>
+        	    <tr>
+        	    	<td>(钟点房)(9：00-18：00期间4小时连住)</td>
+        	    	<td>双床</td>
+        	    	<td>无早</td>
+        	    	<td>免费有线</td>
+        	    	<td>免费取消</td>
+        	    	<td><span class="price">¥<strong>245</strong></span><a href="" class="button bg-yellow">预定</a><a href="" class="button border-red">预付</a></td>
+        	    </tr>
+        	</table>
+        </div>
+    </div>
+
+    <ul class="js-tab clearfix hotel-tab" name="jiudian">
+			<li class="active"><a href="javascript:void(0)">酒店介绍</a></li>
+			<li><a href="javascript:void(0)">酒店政策</a> </li>
+			<li><a href="javascript:void(0)">设施服务</a> </li>
+			<li><a href="javascript:void(0)">酒店周边</a></li>
+			<li><a href="javascript:void(0)">住客店评</a></li>
+
+	</ul>
+	<div class="js-tab-jiudian">
+	    <div class="js-tab-panel active">
+	        <div class="content">
+	            <div class="tit">酒店介绍</div>
+		        <p>上海国际机场宾馆位于虹桥机场迎宾一路368号，地处虹桥国际机场，临近动物园，地理位置优越，交通便利。</p>
+		        <p>上海国际机场宾馆由中国东方航空酒店集团与日本沙龙餐饮管理公司合资建造，是一家花园式酒店。宾馆总建筑面积近20000平方米，主楼高8层。宾馆各类客房舒适雅致，配有进口卫生洁具、中央空调、烟感报警自动喷淋系统和音响系统，并设有IDD/DDD电话、冰箱和MINI酒吧。宾馆在客房内即可收看飞机抵港、离港的实时时间表。</p>
+		        <p>宾馆最具特点的是其售票系统，优先提供中国东方航空公司国内、国际航班的机票。宾馆特别开设了中国东方航空公司上海始发至日本、香港航线的馆内办理乘机手续业务（仅限住宿客人）；还提供与机场之间的迎提供巴士，服务周到、细致。</p>
+		        <p>宾馆内设清新优雅的酒吧、餐厅，提供各地风味中餐、纯正西餐及正宗日本料理；还配有新颖的健身、娱乐设施，深受宾客青睐。</p>
+		        <div class="tit">酒店政策</div>
+		        <ul class="clearfix">
+		        	<li><strong>入住和离店：</strong> 入住时间：12:00以后 离店时间：12:00以前</li>
+		        	<li><strong>取消政策：</strong> 不同类型的客房附带不同的取消预订和预先付费政策 选择上述客房时，请参阅“客房政策”</li>
+		        	<li><strong>入住手续：</strong> 入住时需要出示政府核发的身份证件(带照片)。请携带信用卡和现金用以支付押金或额外费用。</li>
+		        	<li><strong>携带宠物：</strong> 不可携带宠物。</li>
+		        	<li><strong>信用卡：</strong><img src="../images/ad/card.jpg" alt=""></li>
+		        </ul>
+		        <div class="tit">设施服务</div>
+		        <ul class="clearfix">
+		        	<li><strong>基本信息：</strong> 1988年开业　　2007年装修　　房间数：300间房　　电话号码：021-62688866</li>
+		        	<li><strong>酒店特色：</strong> 上海国际机场宾馆是一家中日合资的宾馆，座落于上海红桥机场内，地理位置优越，交通便利。</li>
+		        	<li><strong>网络设施：</strong> 有可无线上网的公共区域(免费)</li>
+		        	<li><strong>停车服务：</strong> 收费停车场</li>
+		        	<li>
+		        	    <strong>酒店设施：</strong>
+		        	    <div class="box">
+			        	    <p>餐饮设施：<span>中餐厅</span><span>西餐厅</span><span>咖啡厅</span><span>酒吧</span><span>日餐厅</span><span>烧烤</span></p>
+	                        <p>会议设施：<span>会议厅</span><span>商务中心</span></p>
+	                        <p>服务项目：<span>外币兑换服务</span><span>票务服务</span><span>洗衣服务</span><span>限时送餐服务</span><span>残疾人客房</span><span>鲜花店</span><span>医务室</span><span>理发美容室</span><span>前台贵重物品</span><span>保险柜专职</span><span>行李员行李存放服务</span><span>叫醒服务</span><span>自动取款机</span><span>收费停车场</span><span>有可无线上网的公共区域</span><span>免费旅游交通图(可赠送)</span><span>接机服务</span><span>大堂吧</span><span>滚梯/电梯</span></p>
+	                        <p>房间设施：<span>国内长途电话</span><span>国际长途电话</span><span>拖鞋</span><span>独立写字台</span><span>24小时热水</span><span>电热水壶</span><span>咖啡壶/茶壶</span><span>免费洗漱用品</span><span>免费瓶装水</span><span>迷你酒吧</span><span>熨斗/熨衣板</span><span>小冰箱</span><span>浴衣多种规格</span><span>电源插座</span><span>110V电压插座</span><span>浴缸</span><span>独立淋浴间</span><span>吹风机</span><span>保险箱</span><span>中央空调</span></p>
+	                        <p>娱乐与健身：<span>按摩室</span><span>茶室</span></p>
+                        </div>
+                    </li>
+		        </ul>
+		        <div class="tit">酒店周边</div>
+		        <ul class="clearfix">
+		        	<li><strong>地铁站：</strong> 虹桥火车站    虹桥1号航站楼站    虹桥2号航站楼    虹桥2号航站楼站    上海动物园站</li>
+		        	<li><strong>餐饮：</strong>爱茜茜里意大利手工冰淇淋    chalon   上海国际机场宾馆-咖啡&酒吧   加门   大板   道神户亭铁板烧   神月亭   </li>
+		        	<li><strong>娱乐：</strong>上海国际机场宾馆-咖啡&酒吧   航友餐饮娱乐中心   东航机务咖吧   华港雅阁大堂吧   小金人雪茄吧</li>
+		        	<li><strong>购物：</strong>SKAP虹桥机场店   虹桥机场免税店Avis(上海虹桥机场店)   广东联昊通物流   上海管理中心外文书店(虹桥机场店)</li>
+		        </ul>
+		    
+			    
+
+		        
+	        </div>
+	    </div>
+	    <div class="js-tab-panel">
+	        <div class="content">
+		        <div class="tit">酒店政策</div>
+		        <ul class="clearfix">
+		        	<li><strong>入住和离店：</strong> 入住时间：12:00以后 离店时间：12:00以前</li>
+		        	<li><strong>取消政策：</strong> 不同类型的客房附带不同的取消预订和预先付费政策 选择上述客房时，请参阅“客房政策”</li>
+		        	<li><strong>入住手续：</strong> 入住时需要出示政府核发的身份证件(带照片)。请携带信用卡和现金用以支付押金或额外费用。</li>
+		        	<li><strong>携带宠物：</strong> 不可携带宠物。</li>
+		        	<li><strong>信用卡：</strong><img src="../images/ad/card.jpg" alt=""></li>
+		        </ul>
+	        </div>
+	    </div>
+	    <div class="js-tab-panel">
+	        <div class="content">
+		        <div class="tit">设施服务</div>
+		        <ul class="clearfix">
+		        	<li><strong>基本信息：</strong> 1988年开业　　2007年装修　　房间数：300间房　　电话号码：021-62688866</li>
+		        	<li><strong>酒店特色：</strong> 上海国际机场宾馆是一家中日合资的宾馆，座落于上海红桥机场内，地理位置优越，交通便利。</li>
+		        	<li><strong>网络设施：</strong> 有可无线上网的公共区域(免费)</li>
+		        	<li><strong>停车服务：</strong> 收费停车场</li>
+		        	<li>
+		        	    <strong>酒店设施：</strong>
+		        	    <div class="box">
+			        	    <p>餐饮设施：<span>中餐厅</span><span>西餐厅</span><span>咖啡厅</span><span>酒吧</span><span>日餐厅</span><span>烧烤</span></p>
+	                        <p>会议设施：<span>会议厅</span><span>商务中心</span></p>
+	                        <p>服务项目：<span>外币兑换服务</span><span>票务服务</span><span>洗衣服务</span><span>限时送餐服务</span><span>残疾人客房</span><span>鲜花店</span><span>医务室</span><span>理发美容室</span><span>前台贵重物品</span><span>保险柜专职</span><span>行李员行李存放服务</span><span>叫醒服务</span><span>自动取款机</span><span>收费停车场</span><span>有可无线上网的公共区域</span><span>免费旅游交通图(可赠送)</span><span>接机服务</span><span>大堂吧</span><span>滚梯/电梯</span></p>
+	                        <p>房间设施：<span>国内长途电话</span><span>国际长途电话</span><span>拖鞋</span><span>独立写字台</span><span>24小时热水</span><span>电热水壶</span><span>咖啡壶/茶壶</span><span>免费洗漱用品</span><span>免费瓶装水</span><span>迷你酒吧</span><span>熨斗/熨衣板</span><span>小冰箱</span><span>浴衣多种规格</span><span>电源插座</span><span>110V电压插座</span><span>浴缸</span><span>独立淋浴间</span><span>吹风机</span><span>保险箱</span><span>中央空调</span></p>
+	                        <p>娱乐与健身：<span>按摩室</span><span>茶室</span></p>
+	                    </div>
+	                </li>
+		        </ul>
+	        </div>
+	    </div>
+	    <div class="js-tab-panel">
+	        <div class="content">
+		        <div class="tit">酒店周边</div>
+		        <ul class="clearfix">
+		        	<li><strong>地铁站：</strong> 虹桥火车站    虹桥1号航站楼站    虹桥2号航站楼    虹桥2号航站楼站    上海动物园站</li>
+		        	<li><strong>餐饮：</strong>爱茜茜里意大利手工冰淇淋    chalon   上海国际机场宾馆-咖啡&酒吧   加门   大板   道神户亭铁板烧   神月亭   </li>
+		        	<li><strong>娱乐：</strong>上海国际机场宾馆-咖啡&酒吧   航友餐饮娱乐中心   东航机务咖吧   华港雅阁大堂吧   小金人雪茄吧</li>
+		        	<li><strong>购物：</strong>SKAP虹桥机场店   虹桥机场免税店Avis(上海虹桥机场店)   广东联昊通物流   上海管理中心外文书店(虹桥机场店)</li>
+		        </ul>
+	        </div>
+	    </div>
+	    <div class="js-tab-panel">
+	        <div class="clearfix" style="width:100%;border-TOP:4px solid #F60;color:#F60;margin-top:35px;line-height:42px;font-size:20px;font-weight:700"><strong style="float:left;background:#F60;color:#FFF;padding:0 20px; margin-right:15px;border-radius:0 0 50px 0;padding-right:35px;">用户点评</strong>Guest comment</div>
+		        <div class="jingqu-content yun-comments-review" style="padding-top:30px;width:100%;">
+			        <ul class="rev-all clearfix">
+			        	<li>满意度<strong>100%</strong></li>
+			        	<li>
+			        		<dl class="dl-inline">
+			        		    <dt>满意</dt>
+			        		    <dd>
+				        		    <div class="progress">
+										<div class="progress-bar bg-yellow" style="width: 100%;">
+											100%</div>
+									</div>
+								</dd>
+							</dl>
+							<dl class="dl-inline">
+			        		    <dt>一般</dt>
+			        		    <dd>
+				        		    <div class="progress">
+										<div class="progress-bar bg-blue" style="width: 50%;">
+											50%</div>
+									</div>
+								</dd>
+							</dl>
+							<dl class="dl-inline">
+			        		    <dt>不满意</dt>
+			        		    <dd>
+				        		    <div class="progress">
+										<div class="progress-bar bg-green" style="width: 50%;">
+											50%</div>
+									</div>
+								</dd>
+							</dl>
+			        	</li>
+			        	<li>
+			        		<div class="last clearfix">
+			        		    <div>卫生评分<strong>5.0</strong></div>
+			        		    <div>服务评分<strong>4.5</strong></div>
+			        		    <div>设施评分<strong>3.6</strong></div>
+			        		    <div>位置评分<strong>2.4</strong></div>
+			        		</div>
+			        	</li>
+			        </ul>
+
+					<div class="tab">
+						<div class="tab-head">
+							<ul class="tab-nav">
+								<li class="active"><a href="#tab-qbdp">全部点评</a> </li>
+								<li><a href="#tab-my">满意（0）</a> </li>
+								<li><a href="#tab-yb">一般（10）</a> </li>
+								<li><a href="#tab-bmy">不满意（10）</a> </li>
+							</ul>
+						</div>
+						<div class="tab-body tab-body-bordered">
+							<div class="tab-panel clearfix active" id="tab-qbdp">
+							    <dl>
+							    	<dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+							    	<dd>
+							    		<div class="summary">
+							    			<span class="button bg-red">满意</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+							    		</div>
+							    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+							    	</dd>
+							    </dl>
+							    <dl>
+							    	<dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+							    	<dd>
+							    		<div class="summary">
+							    			<span class="button bg-green">一般</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+							    		</div>
+							    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+							    	</dd>
+							    </dl>
+							    <dl>
+							    	<dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+							    	<dd>
+							    		<div class="summary">
+							    			<span class="button bg-gray">不满意</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+							    		</div>
+							    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+
+							    	</dd>
+							    </dl>
+							    <dl>
+							    	<dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+							    	<dd>
+							    		<div class="summary">
+							    			<span class="button bg-red">满意</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+							    		</div>
+							    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+							    	</dd>
+							    </dl>
+							    <dl>
+							    	<dt><a href="#"><img src="../images/ad/h.jpg">liuyang007</a></dt>
+							    	<dd>
+							    		<div class="summary">
+							    			<span class="button bg-red">满意</span><span>交通位置：满意</span><span>环境卫生：满意</span><span>设施设备：满意</span><span>服务质量：满意</span>
+							    		</div>
+							    		<p>酒店环境超级好，里面太大了，应有尽有，逛两天都可以。房间也很大，设施齐全，住的很舒服。，5楼有儿童乐园、泳池。就是吃的太贵了。</p>
+
+
+							    	</dd>
+							    </dl>
+							    <ul class="pagination border-green clearfix">
+								    <li><a href="#">上一页</a> </li>
+								    <li class="active"><a href="#">1</a> </li>
+								    <li><a href="#">2</a> </li>
+								    <li><a href="#">3</a> </li>
+								    <li><a href="#">4</a> </li>
+								    <li><a href="#">5</a> </li>
+								    <li><a href="#">下一页</a> </li>
+								</ul>
+						    </div>
+							<div class="tab-panel clearfix" id="tab-my">
+								满意</div>
+							<div class="tab-panel clearfix" id="tab-yb">
+								一般</div>
+						    <div class="tab-panel clearfix" id="tab-bmy">
+								不满意</div>
+						</div>
+					</div>
+			    </div>
+			    <!-- 评论结束 -->
+			    <div class="clearfix"></div>
+	    </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="yun-footer margin-large-top" style="background:#F2F2F2;">
+    <div class="ycontainer">
+		<div class="line">
+			<div class="x8">
+				<div class="foot-nav clearfix">
+					<a href="">关于我们</a>
+					<a href="">联系我们</a>
+					<a href="">产品与服务</a>
+					<a href="">服务条款</a>
+					<a href="">网站地图</a>
+					<a href="">意见反馈</a>
+				</div>
+				<p>版权所有 © 2016-2017　 易房云平台-http://www.yun.com 　　网站常年法律顾问：吴劲松律师</p>
+				<p><b>粤ICP备14011867号-1</b>技术支持:深圳市易建房科技有限公司</p>
+			</div>
+			<div class="x4">
+				<dl class="box-r">
+	                <dt><img width="88" src="../images/er.jpg" alt="集装箱活动房"></dt>
+	                <dd>
+	                  <h4>微信扫一扫</h4>
+	                  <p>扫描二维码，即刻与小易亲密互动，还有劲爆惊喜等你来！</p>
+	                </dd>
+	            </dl>
+			</div>
+		</div>
+		<img class="safe" src="../images/safe.png" alt="">
+	</div>
+</div>
